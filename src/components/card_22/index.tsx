@@ -5,7 +5,7 @@ import images from '../../assets/images'
 function Card22() {
     return (
         // card
-        <div className="w-42rem flex flex-row bg-slate-700 gap-x-7 pe-10 font-muli">
+        <div className="w-42rem flex flex-row bg-slate-700 gap-x-7 pe-10 font-muli shadow-neutral-500/50 shadow-lg">
             {/* left */}
             <div className="flex flex-col justify-center relative basis-1/2 bg-orange-600 border-custom-card-22">
                 {/* img */}

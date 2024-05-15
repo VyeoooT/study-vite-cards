@@ -21,3 +21,7 @@
 .aspect-custom-card-23 {
     aspect-ratio: 9/16;
 }
+
+.top-shadow-card-23 {
+    box-shadow: inset 0px 5px 5px 0px rgba(0,0,0,0.2);
+}

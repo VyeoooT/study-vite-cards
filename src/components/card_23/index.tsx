@@ -5,7 +5,7 @@ import images from '../../assets/images'
 function Card23() {
     return (
         // card
-        <div className="w-42rem flex flex-row bg-white font-muli">
+        <div className="w-42rem flex flex-row bg-white font-muli shadow-neutral-500/50 shadow-lg">
             {/* left */}
             <div className="w-full basis-2/5 relative">
                 {/* img | dang thac mac cho nay: h-full; khong co h-full; aspect-auto; aspect-ratio: 9/16 */}
@@ -40,7 +40,7 @@ function Card23() {
                 </div>
     
                 {/* bottom */}
-                <div className="flex flex-row justify-between items-center bg-neutral-200 px-5 py-6 box-shadow-custom">
+                <div className="flex flex-row justify-between items-center bg-neutral-200 px-5 py-6 top-shadow-card-23">
                     {/* arrow - left */}
                     <div className="border-2 border-neutral-400 rounded-full z-10">
                         <img className="w-full" src={icons.iconArrowLeft23} alt="" />

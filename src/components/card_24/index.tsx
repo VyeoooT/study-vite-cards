@@ -5,7 +5,7 @@ import images from '../../assets/images'
 function Card24() {
     return (
         // card
-        <div className="w-34rem flex flex-row items-center bg-white relative overflow-hidden font-montserrat">
+        <div className="w-34rem flex flex-row items-center bg-white relative overflow-hidden font-montserrat shadow-neutral-500/50 shadow-lg">
             {/* left */}
             <div className="flex flex-col basis-3/5 pl-5 pr-10 py-10 z-10">
             {/* <div className="absolute left-5 z-10"> */}
