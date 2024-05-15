@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair Display');
+@import url('https://fonts.googleapis.com/css?family=Open Sans');
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+.font-muli {
+    font-family: 'Muli', sans-serif;
+}
+
+.font-playfair {
+    font-family: 'Playfair Display', serif;
+}
+
+.font-opensan {
+    font-family: "Open Sans", serif;
+}
+
+.w-42rem {
+    width: 42rem;
+}
+
+.aspect-custom-card-23 {
+    aspect-ratio: 9/16;
+}

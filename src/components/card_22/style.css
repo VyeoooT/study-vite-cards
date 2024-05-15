@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+.font-muli {
+    font-family: 'Muli', sans-serif;
+}
+
+.w-42rem {
+    width: 42rem;
+}
+
+.border-custom-card-22 {
+    border-radius: 0% 50% 50% 0%;
+}

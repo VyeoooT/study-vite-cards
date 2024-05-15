@@ -1,0 +1,17 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,700);
+
+.font-raleway {
+    font-family: "Raleway";
+}
+
+.w-48rem {
+    width: 48rem;
+}
+
+.w-2px-card-20 {
+    width: 2px;
+}
+
+.h-2px-card-20 {
+    height: 2px;
+}

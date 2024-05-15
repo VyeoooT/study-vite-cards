@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Montserrat:300,400,700,800|Open+Sans:300');
+
+.font-fjalla-one {
+    font-family: "Fjalla One", sans-serif;
+}
+
+.font-opensan {
+    font-family: "Open Sans", sans-serif;
+}
+
+.font-monterrat {
+    font-family: "Montserrat", sans-serif;
+}
+
+.w-45rem {
+    width: 45rem;
+}

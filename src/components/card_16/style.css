@@ -1,0 +1,7 @@
+.bg-linear-gradient-card16 {
+    background-image: linear-gradient(to right bottom, #e520d4, #bd26d1, #922bcb, #622ec3, #182eb8);
+}
+
+.h-2px {
+    height: 2px;
+}
