@@ -5,7 +5,7 @@ import images from '../../assets/images'
 function Card_5() {
     return (
         // card
-        <div className="w-standard flex flex-row justify-center space-x-14 pe-14 rounded-3xl shadow-neutral-500 shadow-2xl overflow-hidden">
+        <div className="w-36rem flex flex-row justify-center space-x-14 pe-14 rounded-3xl shadow-neutral-500 shadow-2xl overflow-hidden">
             {/* left */}
             <div className="relative basis-2/5">
                 {/* avatar */}
