@@ -161,14 +161,13 @@ function App() {
             <Card28 />
           </CardContainer>
           
-          <CardContainer label="29">
+          <CardContainer label="Card 29">
             <Card29 />
           </CardContainer>
           
-          <CardContainer label="30">
+          <CardContainer label="Card 30">
             <Card30 />
           </CardContainer>
-          
         </div>
       </div>
     </>
