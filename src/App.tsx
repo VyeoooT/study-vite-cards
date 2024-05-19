@@ -2,6 +2,9 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 // import './App.css'
+
+import CardContainer from './components/CardContainer.tsx'
+
 import Card1 from './components/card_1/index.tsx'
 import Card2 from './components/card_2/index.tsx'
 import Card3 from './components/card_3/index.tsx'
@@ -27,6 +30,11 @@ import Card22 from './components/card_22/index.tsx'
 import Card23 from './components/card_23/index.tsx'
 import Card24 from './components/card_24/index.tsx'
 import Card25 from './components/card_25/index.tsx'
+import Card26 from './components/card_26/index.tsx'
+import Card27 from './components/card_27/index.tsx'
+import Card28 from './components/card_28/index.tsx'
+import Card29 from './components/card_29/index.tsx'
+import Card30 from './components/card_30/index.tsx'
 
 function App() {
   return (
@@ -38,33 +46,129 @@ function App() {
         </h1>
 
         {/* layout grid */}
-        <div className="grid justify-items-center items-start gap-x-3 gap-y-7 2xl:grid-cols-4 xl:grid-cols-3 md:grid-cols-2 max-md:gap-y-20">
+        <div className="flex flex-wrap justify-center gap-20">
+        {/* <div className="grid justify-items-center items-start gap-x-3 gap-y-7 2xl:grid-cols-4 xl:grid-cols-3 md:grid-cols-2 max-md:gap-y-20"> */}
         {/* <div className="grid auto-rows-max hover:auto-rows-min"> */}
-          <div><Card1 /></div>
-          <div><Card2 /></div>
-          <div><Card3 /></div>
-          <div><Card4 /></div>
-          <div className="justify-self-center 2xl:col-span-2 md:col-span-2"><Card5 /></div>
-          <div><Card6 /></div>
-          <div><Card7 /></div>
-          <div><Card8 /></div>
-          <div><Card9 /></div>
-          <div><Card10 /></div>
-          <div><Card11 /></div>
-          <div><Card12 /></div>
-          <div><Card13 /></div>
-          <div><Card14 /></div>
-          <div><Card15 /></div>
-          <div><Card16 /></div>
-          <div className="justify-self-center 2xl:col-span-2 md:col-span-2"><Card17 /></div>
-          <div><Card18 /></div>
-          <div><Card19 /></div>
-          <div className="justify-self-center 2xl:col-span-2 md:col-span-2"><Card20 /></div>
-          <div className="justify-self-center 2xl:col-span-2 md:col-span-2"><Card21 /></div>
-          <div className="justify-self-center 2xl:col-span-2 md:col-span-2"><Card22 /></div>
-          <div className="justify-self-center 2xl:col-span-2 md:col-span-2"><Card23 /></div>
-          <div className="justify-self-center 2xl:col-span-2 md:col-span-2"><Card24 /></div>
-          <div className="justify-self-center 2xl:col-span-2 md:col-span-2"><Card25 /></div>
+          <CardContainer label="Card 1">
+            <Card1 />
+          </CardContainer>
+
+          <CardContainer label="Card 2">
+            <Card2 />
+          </CardContainer>
+          
+          <CardContainer label="Card 3">
+            <Card3 />
+          </CardContainer>
+          
+          <CardContainer label="Card 4">
+            <Card4 />
+          </CardContainer>
+          
+          <CardContainer label="Card 5">
+            <Card5 />
+          </CardContainer>
+          
+          <CardContainer label="Card 6">
+            <Card6 />
+          </CardContainer>
+          
+          <CardContainer label="Card 7">
+            <Card7 />
+          </CardContainer>
+          
+          <CardContainer label="Card 8">
+            <Card8 />
+          </CardContainer>
+          
+          <CardContainer label="Card 9">
+            <Card9 />
+          </CardContainer>
+          
+          <CardContainer label="Card 10">
+            <Card10 />
+          </CardContainer>
+          
+          <CardContainer label="Card 11">
+            <Card11 />
+          </CardContainer>
+          
+          <CardContainer label="Card 12">
+            <Card12 />
+          </CardContainer>
+          
+          <CardContainer label="Card 13">
+            <Card13 />
+          </CardContainer>
+          
+          <CardContainer label="Card 14">
+            <Card14 />
+          </CardContainer>
+          
+          <CardContainer label="Card 15">
+            <Card15 />
+          </CardContainer>
+          
+          <CardContainer label="Card 16">
+            <Card16 />
+          </CardContainer>
+          
+          <CardContainer label="Card 17">
+            <Card17 />
+          </CardContainer>
+          
+          <CardContainer label="Card 18">
+            <Card18 />
+          </CardContainer>
+          
+          <CardContainer label="Card 19">
+            <Card19 />
+          </CardContainer>
+          
+          <CardContainer label="Card 20">
+            <Card20 />
+          </CardContainer>
+          
+          <CardContainer label="Card 21">
+            <Card21 />
+          </CardContainer>
+          
+          <CardContainer label="Card 22">
+            <Card22 />
+          </CardContainer>
+          
+          <CardContainer label="Card 23">
+            <Card23 />
+          </CardContainer>
+          
+          <CardContainer label="Card 24">
+            <Card24 />
+          </CardContainer>
+          
+          <CardContainer label="Card 25">
+            <Card25 />
+          </CardContainer>
+          
+          <CardContainer label="Card 26">
+            <Card26 />
+          </CardContainer>
+          
+          <CardContainer label="Card 27">
+            <Card27 />
+          </CardContainer>
+          
+          <CardContainer label="Card 28">
+            <Card28 />
+          </CardContainer>
+          
+          <CardContainer label="29">
+            <Card29 />
+          </CardContainer>
+          
+          <CardContainer label="30">
+            <Card30 />
+          </CardContainer>
+          
         </div>
       </div>
     </>

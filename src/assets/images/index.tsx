@@ -43,6 +43,12 @@ import avtCard24 from './avt-card-24.png'
 
 import chair from './chair.jpg'
 
+import imgCard28 from './img-card-28.jpg'
+
+import shoes29 from './shoes-card-29.png'
+
+import house30 from './img-house-card-30.jpg'
+
 export default {
   avt,
   iconArrowDown,
@@ -87,4 +93,10 @@ export default {
   avtCard24,
 
   chair,
+
+  imgCard28,
+
+  shoes29,
+
+  house30,
 }

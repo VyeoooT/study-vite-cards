@@ -97,6 +97,23 @@ import iconCart24 from './card_24/solar_cart-line-duotone.png'
 import iconArrowLeft25 from './card_25/icon-arrow-left.png'
 import iconStarFill25 from './card_25/icon-star-fill.png'
 import iconStarNoFill25 from './card_25/icon-star-light.png'
+
+// icons card_26
+import iconCup26 from './card_26/icon-cup-star-bold.png'
+import iconControlGame26 from './card_26/icon-game-controller.png'
+import iconUserGr26 from './card_26/icon-user-group.png'
+import iconCoffee26 from './card_26/icon-coffee-togo.png'
+
+// icons card_29
+import iconHeart29 from './card_29/mdi_heart.png'
+
+// icons card_30
+import iconBedrooms30 from './card_30/mdi_bedroom.png'
+import iconBathrooms30 from './card_30/mdi_bathroom-tap.png'
+import iconArea30 from './card_30/carbon_area.png'
+import iconHeart30 from './card_30/mdi_heart.png'
+import iconSetting30 from './card_30/basil_settings-adjust-solid.png'
+
 export default {
     // card_4
     iconFacebook,
@@ -195,4 +212,20 @@ export default {
     iconArrowLeft25,
     iconStarFill25,
     iconStarNoFill25,
+
+    // card_26
+    iconCup26,
+    iconControlGame26,
+    iconUserGr26,
+    iconCoffee26,
+
+    // card_29
+    iconHeart29,
+
+    // card_30
+    iconBedrooms30,
+    iconBathrooms30,
+    iconArea30,
+    iconHeart30,
+    iconSetting30,
 }
