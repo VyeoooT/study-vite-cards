@@ -49,6 +49,18 @@ import shoes29 from './shoes-card-29.png'
 
 import house30 from './img-house-card-30.jpg'
 
+import shoes31 from './shoes-card-31.png'
+
+import shoes32 from './shoes-card-32.png'
+
+import shoes34 from './shoes-card-34.png'
+
+import clash35 from './clash-card-35.png'
+
+import imgBackground39 from './img-card-39.jpg'
+
+import imgFood40 from './img-food-card-40.png'
+
 export default {
   avt,
   iconArrowDown,
@@ -99,4 +111,16 @@ export default {
   shoes29,
 
   house30,
+
+  shoes31,
+
+  shoes32,
+
+  shoes34,
+
+  clash35,
+
+  imgBackground39,
+
+  imgFood40,
 }

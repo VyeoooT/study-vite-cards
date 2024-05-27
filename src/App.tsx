@@ -35,6 +35,16 @@ import Card27 from './components/card_27/index.tsx'
 import Card28 from './components/card_28/index.tsx'
 import Card29 from './components/card_29/index.tsx'
 import Card30 from './components/card_30/index.tsx'
+import Card31 from './components/card_31/index.tsx'
+import Card32 from './components/card_32/index.tsx'
+import Card33 from './components/card_33/index.tsx'
+import Card34 from './components/card_34/index.tsx'
+import Card35 from './components/card_35/index.tsx'
+import Card36 from './components/card_36/index.tsx'
+import Card37 from './components/card_37/index.tsx'
+import Card38 from './components/card_38/index.tsx'
+import Card39 from './components/card_39/index.tsx'
+import Card40 from './components/card_40/index.tsx'
 
 function App() {
   return (
@@ -167,6 +177,46 @@ function App() {
           
           <CardContainer label="Card 30">
             <Card30 />
+          </CardContainer>
+
+          <CardContainer label="Card 31">
+            <Card31 />
+          </CardContainer>
+
+          <CardContainer label="Card 32">
+            <Card32 />
+          </CardContainer>
+
+          <CardContainer label="Card 33">
+            <Card33 />
+          </CardContainer>
+
+          <CardContainer label="Card 34">
+            <Card34 />
+          </CardContainer>
+
+          <CardContainer label="Card 35">
+            <Card35 />
+          </CardContainer>
+
+          <CardContainer label="Card 36">
+            <Card36 />
+          </CardContainer>
+
+          <CardContainer label="Card 37">
+            <Card37 />
+          </CardContainer>
+
+          <CardContainer label="Card 38">
+            <Card38 />
+          </CardContainer>
+
+          <CardContainer label="Card 39">
+            <Card39 />
+          </CardContainer>
+
+          <CardContainer label="Card 40">
+            <Card40 />
           </CardContainer>
         </div>
       </div>

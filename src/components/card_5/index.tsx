@@ -5,7 +5,7 @@ import images from '../../assets/images'
 function Card_5() {
     return (
         // card
-        <div className="w-36rem flex flex-row justify-center space-x-14 pe-14 rounded-3xl shadow-neutral-500 shadow-2xl overflow-hidden">
+        <div className="w-36rem flex flex-row justify-center space-x-14 pe-14 rounded-3xl bg-white shadow-neutral-500 shadow-2xl overflow-hidden">
             {/* left */}
             <div className="relative basis-2/5">
                 {/* avatar */}
@@ -14,11 +14,11 @@ function Card_5() {
                 </div>
 
                 {/* bg */}
-                <img className="w-full aspect-9-16 object-cover" src={images.bgCard5} alt="" />
+                <img className="w-full h-full object-cover" src={images.bgCard5} alt="" />
             </div>
 
             {/* right */}
-            <div className="w-full basis-auto flex flex-col mt-20 bg-white space-y-8">
+            <div className="w-full basis-auto flex flex-col mt-20 space-y-8">
                 {/* collect */}
                 <div className="text-end">
                     <p className="text-base font-bold text-green-800">Ant Collector</p>

@@ -18,14 +18,14 @@ function Card29() {
                     <p className="text-sm text-pink-900/60">CHOOSE SIZE</p>
 
                     <div className="flex flex-row justify-between text-pink-900/60">
-                        <p className="min-w-10 h-10 border-2 flex items-center justify-center">5</p>
-                        <p className="min-w-10 h-10 border-2 flex items-center justify-center">6</p>
-                        <p className="min-w-10 h-10 border-2 flex items-center justify-center bg-pink-900/60 text-white">7</p>
-                        <p className="min-w-10 h-10 border-2 flex items-center justify-center">8</p>
-                        <p className="min-w-10 h-10 border-2 flex items-center justify-center">9</p>
-                        <p className="min-w-10 h-10 border-2 flex items-center justify-center">10</p>
-                        <p className="min-w-10 h-10 border-2 flex items-center justify-center">11</p>
-                        <p className="min-w-10 h-10 border-2 flex items-center justify-center">12</p>
+                        <p className="min-w-10 h-10 p-2 border-2 flex items-center justify-center">5</p>
+                        <p className="min-w-10 h-10 p-2 border-2 flex items-center justify-center">6</p>
+                        <p className="min-w-10 h-10 p-2 border-2 flex items-center justify-center bg-pink-900/60 text-white">7</p>
+                        <p className="min-w-10 h-10 p-2 border-2 flex items-center justify-center">8</p>
+                        <p className="min-w-10 h-10 p-2 border-2 flex items-center justify-center">9</p>
+                        <p className="min-w-10 h-10 p-2 border-2 flex items-center justify-center">10</p>
+                        <p className="min-w-10 h-10 p-2 border-2 flex items-center justify-center">11</p>
+                        <p className="min-w-10 h-10 p-2 border-2 flex items-center justify-center">12</p>
                     </div>
                 </div>
             </div>

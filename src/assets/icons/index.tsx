@@ -114,6 +114,32 @@ import iconArea30 from './card_30/carbon_area.png'
 import iconHeart30 from './card_30/mdi_heart.png'
 import iconSetting30 from './card_30/basil_settings-adjust-solid.png'
 
+// icons card_31
+import iconStarOrange31 from './card_31/icon-star-fill-orange.png'
+import iconStarBlack31 from './card_31/icon-star-fill-black.png'
+
+// icons card_33
+import iconGit33 from './card_33/icon-github.png'
+import iconLinkedin33 from './card_33/icon-linkedin.png'
+import iconLetter33 from './card_33/icon-letter.png'
+
+// icons card_34
+import iconLogo34 from './card_34/icon-logo-34.png'
+import iconShare34 from './card_34/icon-share-34.png'
+import iconCart34 from './card_34/icon-cart-34.png'
+
+// icons card_37
+import iconFacebook37 from './card_37/icon-fb-37.png'
+import iconBehance37 from './card_37/icon-behance-37.png'
+import iconTwitter37 from './card_37/icon-twitter-37.png'
+import iconGoogle37 from './card_37/icon-google-37.png'
+import iconTick37 from './card_37/icon-tick-37.png'
+import iconMore37 from './card_37/icon-more-37.png'
+
+// icons card_40
+import iconComment40 from './card_40/icon-comment.png'
+import iconTimer40 from './card_40/icon-timer.png'
+
 export default {
     // card_4
     iconFacebook,
@@ -228,4 +254,30 @@ export default {
     iconArea30,
     iconHeart30,
     iconSetting30,
+
+    // card_31
+    iconStarOrange31,
+    iconStarBlack31,
+
+    // card_33
+    iconGit33,
+    iconLinkedin33,
+    iconLetter33,
+
+    // card_34
+    iconLogo34,
+    iconShare34,
+    iconCart34,
+
+    // card_37
+    iconFacebook37,
+    iconBehance37,
+    iconTwitter37,
+    iconGoogle37,
+    iconTick37,
+    iconMore37,
+
+    // card_40
+    iconComment40,
+    iconTimer40,
 }
