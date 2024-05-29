@@ -53,7 +53,7 @@ function Card18() {
                                     <FontAwesomeIcon icon={faCircleMinus} color="#929292" />
                                 </button>
 
-                                <input className="w-8 px-1 text-center text-gray-600" type="text" value="1"/>
+                                <input className="w-8 px-1 text-center text-gray-600" type="text" defaultValue="1"/>
                                 
                                 <button>
                                     <FontAwesomeIcon icon={faCirclePlus} color="#929292" />
