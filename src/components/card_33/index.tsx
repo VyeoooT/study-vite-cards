@@ -1,6 +1,8 @@
 import './style.css'
 import images from '../../assets/images'
-import icons from '../../assets/icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 
 function Carrd33() {
     return (
@@ -20,15 +22,21 @@ function Carrd33() {
                 </div>
 
                 {/* social */}
-                <div className="flex space-x-3">
-                    <img src={icons.iconLinkedin33} alt="" />
-                    <img src={icons.iconGit33} alt="" />
-                    <img src={icons.iconLetter33} alt="" />
+                <div className="flex space-x-5">
+                    <button>
+                        <FontAwesomeIcon icon={faLinkedin} color="#0076B2" size="2x" />
+                    </button>
+                    <button>
+                        <FontAwesomeIcon icon={faGithub} size="2x" />
+                    </button>
+                    <button>
+                        <FontAwesomeIcon icon={faEnvelope} color="#a6645d" size="2x" />
+                    </button>
                 </div>
 
                 {/* button */}
                 <div className="">
-                    <button className="py-2 px-6 bg-blue-600 text-white text-sm rounded-full">Message</button>
+                    <button className="py-2 px-6 bg-blue-600 text-white text-sm rounded-full hover:px-12 transition-all active:shadow-blue-800 active:shadow-inner">Message</button>
                 </div>
             </div>
         </div>

@@ -1,7 +1,7 @@
 import './style.css'
 import images from '../../assets/images'
 
-function Card26() {
+function Card27() {
     return (
         // card
         <div className="w-32rem bg-red-400 flex flex-row space-x-5 rounded-md overflow-hidden shadow-neutral-500/50 shadow-lg">
@@ -47,4 +47,4 @@ function Card26() {
     )
 }
 
-export default Card26
+export default Card27

@@ -1,5 +1,7 @@
 import './style.css'
 import images from '../../assets/images'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlus } from '@fortawesome/free-solid-svg-icons'
 
 function Card36() {
     return (
@@ -60,8 +62,14 @@ function Card36() {
 
                 {/* button */}
                 <div className="flex space-x-2">
-                    <button className="min-w-32 px-4 py-1 rounded-md bg-black text-base text-white font-bold">Follow</button>
-                    <button className="min-w-32 px-4 py-1 rounded-md bg-transparent border border-black text-base text-black font-medium">View profile</button>
+                    <button className="relative min-w-32 px-4 py-1 rounded-md bg-black text-base text-white font-bold hover:-translate-y-1 transition-transform group">
+                        Follow
+                        <span className="ml-2 absolute right-2 bottom-0 opacity-0 group-active:-translate-y-5 group-active:opacity-100 transition-all duration-700">
+                            <FontAwesomeIcon icon={faPlus} size="xs" /> 1
+                        </span>
+                    </button>
+
+                    <button className="min-w-32 px-4 py-1 rounded-md bg-transparent border border-black text-base text-black font-medium active:shadow-neutral-500/50 active:shadow-inner">View profile</button>
                 </div>
             </div>
         </div>

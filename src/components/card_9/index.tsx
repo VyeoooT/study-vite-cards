@@ -47,8 +47,8 @@ function Card9() {
 
                 {/* button */}
                 <div className="w-full flex flex-row flex-wrap justify-around">
-                    <button className="py-1 px-6 text-sm text-white font-medium bg-pink-500 rounded-md">Follow</button>
-                    <button className="py-1 px-6 text-sm text-gray-500 font-medium border-2 rounded-md">Message</button>
+                    <button className="py-1 px-6 text-sm text-white font-medium bg-pink-500 rounded-md border-2 border-transparent hover:text-gray-500 hover:border-gray-300 hover:bg-white transition-colors active:translate-y-1">Follow</button>
+                    <button className="py-1 px-6 text-sm text-gray-500 font-medium bg-white border-2 border-gray-300 rounded-md hover:text-white hover:border-transparent hover:bg-pink-500 transition-colors active:translate-y-1">Message</button>
                 </div>
             </div>
         </div>

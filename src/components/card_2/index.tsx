@@ -28,7 +28,7 @@ function Card2() {
 
                     {/* button */}
                     <div>
-                        <button className="bg-blue-600 py-2 px-5 rounded-lg text-white text-sm">View More</button>
+                        <button className="bg-blue-600 py-2 px-5 rounded-lg text-white text-sm transition-shadow hover:shadow-blue-500/50 hover:shadow-lg active:shadow-blue-400 active:shadow-inner">View More</button>
                     </div>
                 </div>
             </div>

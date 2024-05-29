@@ -33,13 +33,13 @@ function Card21() {
     
                 {/* select color */}
                 <div className="flex flow-row flex-wrap space-x-3">
-                    <div className="w-8 h-8 bg-black rounded-sm"></div>
-                    <div className="w-8 h-8 bg-red-500 rounded-sm"></div>
+                    <button className="w-8 h-8 bg-black rounded-sm"></button>
+                    <button className="w-8 h-8 bg-red-600 rounded-sm"></button>
                 </div>
     
                 {/* button */}
                 <div className="w-full">
-                    <button className="w-full py-2 border-black border-2 rounded-md text-base font-medium uppercase">add to cart</button>
+                    <button className="w-full py-2 border-black border-2 rounded-md text-base font-medium uppercase hover:shadow-neutral-400 hover:shadow-md transition-shadow active:shadow-inner">add to cart</button>
                 </div>
             </div>
         </div>

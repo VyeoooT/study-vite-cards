@@ -1,30 +1,33 @@
 import './style.css'
-import icons from '../../assets/icons'
 import images from '../../assets/images'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAngleLeft } from '@fortawesome/free-solid-svg-icons'
+import { faHeart } from '@fortawesome/free-regular-svg-icons'
 
 function Card20() {
     return (
         // card
-        <div className="w-48rem bg-white shadow-neutral-500/50 shadow-xl font-raleway">
+        <div className="w-48rem flex flex-col bg-white shadow-neutral-500/50 shadow-xl font-raleway divide-y">
             {/* header */}
-            <div className="flex flex-row justify-between items-center mx-6 py-6">
+            <div className="flex flex-row justify-between items-center mx-6 py-5">
                 {/* back to */}
-                <div className="flex flex-row">
-                    <img src={icons.iconBack20} alt="" />
-                    <p className="ml-2 text-sm text-gray-500">BACK TO ALL PLANTS</p>
+                <div>
+                    <button className="flex items-center space-x-2">
+                        <FontAwesomeIcon icon={faAngleLeft} color="#6B7280" />
+                        <p className="text-sm text-gray-500">BACK TO ALL PLANTS</p>
+                    </button>
                 </div>
 
                 {/* wishlist */}
                 <div>
-                    <img src={icons.iconHeart} alt="" />
+                    <button>
+                        <FontAwesomeIcon icon={faHeart} color="#6B7280" />
+                    </button>
                 </div>
             </div>
 
-            {/* line */}
-            <div className="w-full h-2px-card-20 bg-gray-200"></div>
-
             {/* container - content */}
-            <div className="w-full flex flex-row space-x-5">
+            <div className="flex flex-row space-x-5 divide-x">
                 {/* left */}
                 <div className="flex justify-center items-center basis-2/5">
                     {/* img */}
@@ -33,14 +36,11 @@ function Card20() {
                     </div>
                 </div>
 
-                {/* line */}
-                <div className="w-2px-card-20 bg-gray-200"></div>
-
                 {/* right */}
-                <div className="basis-3/5 pe-14 py-6 text-gray-500">
+                <div className="basis-3/5 pl-7 pe-20 py-6 text-gray-500">
                     {/* name - product */}
                     <div className="w-full text-left">
-                        <p className="uppercase text-3xl">classNameic peace lily</p>
+                        <p className="uppercase text-2xl">classNameic peace lily</p>
                         <p className="uppercase text-base">popular house plant</p>
                     </div>
 
@@ -58,8 +58,8 @@ function Card20() {
 
                     {/* button */}
                     <div className="flex flex-row flex-wrap justify-between py-5">
-                        <button className="uppercase border-2 px-8 py-2 font-medium">add to cart</button>
-                        <button className="uppercase border-2 px-8 py-2 font-medium">wishlist</button>
+                        <button className="uppercase border-2 px-8 py-2 font-medium hover:shadow-neutral-400/50 hover:shadow-md transition-shadow active:shadow-inner">add to cart</button>
+                        <button className="uppercase border-2 px-8 py-2 font-medium hover:shadow-neutral-400/50 hover:shadow-md transition-shadow active:shadow-inner">wishlist</button>
                     </div>
                 </div>
             </div>

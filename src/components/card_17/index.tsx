@@ -1,6 +1,8 @@
 import './style.css'
-import icons from '../../assets/icons'
 import images from '../../assets/images'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHeart } from '@fortawesome/free-regular-svg-icons'
+import { faShareNodes } from '@fortawesome/free-solid-svg-icons'
 
 function Card17() {
     return (
@@ -14,8 +16,12 @@ function Card17() {
                     <div className="w-full bg-lime-500 px-5 rounded-tl-xl rounded-tr-xl">
                         {/* header */}
                         <div className="flex flex-row justify-between py-5">
-                            <img src={icons.iconHeart17} alt="" />
-                            <img src={icons.iconShare17} alt="" />
+                            <button>
+                                <FontAwesomeIcon icon={faHeart} color="white" size="lg" />
+                            </button>
+                            <button>
+                                <FontAwesomeIcon icon={faShareNodes} color="white" size="lg" />
+                            </button>
                         </div>
 
                         {/* image - product */}
@@ -25,12 +31,12 @@ function Card17() {
                     </div>
 
                     {/* bottom */}
-                    <div className="py-5 bg-white px-5 rounded-bl-xl rounded-br-xl">
+                    <div className="p-5 bg-white rounded-bl-xl rounded-br-xl">
                         <div className="flex flex-row justify-around">
-                            <img className="w-1/5 border-2 p-1" src={images.greenApple217} alt="" />
-                            <img className="w-1/5 border-2 p-1" src={images.halfApple17} alt="" />
-                            <img className="w-1/5 border-2 p-1" src={images.greenAppleflipped17} alt="" />
-                            <img className="w-1/5 border-2 p-1" src={images.appleTop17} alt="" />
+                            <img className="w-10 h-10 p-1 border-2 hover:cursor-pointer" src={images.greenApple217} alt="" />
+                            <img className="w-10 h-10 p-1 border-2 hover:cursor-pointer" src={images.halfApple17} alt="" />
+                            <img className="w-10 h-10 p-1 border-2 hover:cursor-pointer" src={images.greenAppleflipped17} alt="" />
+                            <img className="w-10 h-10 p-1 border-2 hover:cursor-pointer" src={images.appleTop17} alt="" />
                         </div>
                     </div>
                 </div>
@@ -57,11 +63,11 @@ function Card17() {
                         <p className="text-sm text-gray-400">SELECT A COLOR</p>
 
                         {/* img */}
-                        <div className="w-1/2 flex flex-row space-x-3">
-                            <img className="w-1/5 p-1 border-2 rounded-md" src={images.greenApple217} alt="" />
-                            <img className="w-1/5" src={images.orangeApple17} alt="" />
-                            <img className="w-1/5" src={images.redApple17} alt="" />
-                            <img className="w-1/5" src={images.yellowApple17} alt="" />
+                        <div className="flex flex-row space-x-2">
+                            <img className="w-9 h-9 p-1 border-2 rounded-md hover:cursor-pointer" src={images.greenApple217} alt="" />
+                            <img className="w-9 h-9 p-1 hover:cursor-pointer" src={images.orangeApple17} alt="" />
+                            <img className="w-9 h-9 p-1 hover:cursor-pointer" src={images.redApple17} alt="" />
+                            <img className="w-9 h-9 p-1 hover:cursor-pointer" src={images.yellowApple17} alt="" />
                         </div>
                     </div>
                 </div>
@@ -82,7 +88,7 @@ function Card17() {
 
                     {/* button */}
                     <div>
-                        <button className="py-3 p-9 bg-red-500 text-sm text-white font-semibold rounded-md shadow-gray-500/50 shadow-xl">ADD TO CART</button>
+                        <button className="py-3 p-9 bg-red-500 text-sm text-white font-semibold rounded-md shadow-gray-500/50 shadow-xl hover:shadow-none transition-shadow active:shadow-red-900 active:shadow-inner">ADD TO CART</button>
                     </div>
                 </div>
             </div>

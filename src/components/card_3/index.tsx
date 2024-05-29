@@ -16,7 +16,7 @@ function Card3() {
                 <div className="flex flex-col gap-y-1">
                     {/* button - technology */}
                     <div>
-                        <button className='py-1 px-2 btn-linear-custom rounded-full text-white text-xs'>Technology</button>
+                        <button className="py-1 px-2 btn-linear-custom rounded-full translate-y-0 text-white text-xs hover:-translate-y-1 transition-transform active:shadow-gray-500/50 active:shadow-inner">Technology</button>
                     </div>
 
                     {/* text */}

@@ -1,5 +1,8 @@
 // export icons
 
+// icons card_1
+import iconPlus1 from './card_1/icon-plus.png'
+
 // icons card_4
 import iconFacebook from './card_4/icon-fb.png'
 import iconGithub from './card_4/icon-git.png'
@@ -141,6 +144,9 @@ import iconComment40 from './card_40/icon-comment.png'
 import iconTimer40 from './card_40/icon-timer.png'
 
 export default {
+    // card_1
+    iconPlus1,
+
     // card_4
     iconFacebook,
     iconGithub,

@@ -1,6 +1,7 @@
 import './style.css'
-import icons from '../../assets/icons'
 import images from '../../assets/images'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faDribbble, faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
 function Card10() {
     return (
@@ -29,16 +30,24 @@ function Card10() {
                 </div>
 
                 {/* social */}
-                <div className="flex flex-row flex-wrap justify-center space-x-2">
-                    <img src={icons.iconFb10} alt="" />
-                    <img src={icons.iconIg10} alt="" />
-                    <img src={icons.iconTwitter10} alt="" />
-                    <img src={icons.iconLinkedin10} alt="" />
+                <div className="flex flex-row flex-wrap justify-center space-x-3">
+                    <button>
+                        <FontAwesomeIcon icon={faInstagram} size="lg" />
+                    </button>
+                    <button>
+                        <FontAwesomeIcon icon={faTwitter} size="lg" />
+                    </button>
+                    <button>
+                        <FontAwesomeIcon icon={faDribbble} size="lg" />
+                    </button>
+                    <button>
+                        <FontAwesomeIcon icon={faFacebook} size="lg" />
+                    </button>
                 </div>
 
                 {/* button */}
                 <div className="w-full text-center px-5">
-                    <button className="w-full py-2 bg-black rounded-full text-white font-medium text-base">Contact</button>
+                    <button className="w-full py-1 bg-black rounded-full text-white font-medium text-base border-2 border-transparent hover:bg-white hover:text-black hover:border-black transition-colors">Contact</button>
                 </div>
             </div>
         </div>

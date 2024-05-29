@@ -1,6 +1,8 @@
 import './style.css'
-import icons from '../../assets/icons'
 import images from '../../assets/images'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook, faGithub, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faCircle } from '@fortawesome/free-solid-svg-icons'
 
 function Card12() {
     return (
@@ -50,10 +52,18 @@ function Card12() {
 
                     {/* social - icon */}
                     <div className="flex flex-row flex-wrap justify-center space-x-4">
-                        <img className="shadow-blue-400 shadow-sm rounded-full" src={icons.iconFb12} alt="" />
-                        <img className="shadow-blue-400 shadow-sm rounded-full" src={icons.iconIg12} alt="" />
-                        <img className="shadow-blue-400 shadow-sm rounded-full" src={icons.iconGit12} alt="" />
-                        <img className="shadow-blue-400 shadow-sm rounded-full" src={icons.iconTwitter12} alt="" />
+                        <button>
+                            <FontAwesomeIcon icon={faFacebook} size='lg' color="#2266AE" />
+                        </button>
+                        <button>
+                            <FontAwesomeIcon icon={faInstagram} size='lg' color="#D7326C" mask={faCircle} />
+                        </button>
+                        <button>
+                            <FontAwesomeIcon icon={faTwitter} size='lg' color="#1890DF" mask={faCircle} />
+                        </button>
+                        <button>
+                            <FontAwesomeIcon icon={faGithub} size='lg' color="#404142" />
+                        </button>
                     </div>
                 </div>
             </div>

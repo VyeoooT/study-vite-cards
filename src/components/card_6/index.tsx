@@ -1,5 +1,7 @@
 import './style.css'
 import images from '../../assets/images'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEllipsisVertical } from '@fortawesome/free-solid-svg-icons'
 
 function Card6() {
     return (
@@ -21,10 +23,10 @@ function Card6() {
             {/* bottom */}
             <div className="w-full px-4 space-y-6">
                 {/* more button */}
-                <div className="w-full flex flex-col items-end mt-5 space-y-1">
-                    <span className="w-1 h-1 bg-gray-800 rounded-full"></span>
-                    <span className="w-1 h-1 bg-gray-800 rounded-full"></span>
-                    <span className="w-1 h-1 bg-gray-800 rounded-full"></span>
+                <div className="w-full flex flex-col items-end mt-5">
+                    <button>
+                        <FontAwesomeIcon icon={faEllipsisVertical} />
+                    </button>
                 </div>
 
                 {/* info */}
@@ -53,7 +55,7 @@ function Card6() {
 
                 {/* button follow */}
                 <div className="w-full text-center">
-                    <button className="w-full py-3 rounded-full bg-yellow-400 text-sm text-black font-medium">Follow</button>
+                    <button className="w-full py-3 rounded-full bg-yellow-400 text-sm text-black font-medium hover:shadow-yellow-500/50 hover:shadow-lg transition-shadow active:shadow-yellow-800/40 active:shadow-inner">Follow</button>
                 </div>
 
                 {/* description */}

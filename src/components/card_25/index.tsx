@@ -1,17 +1,20 @@
 import './style.css'
-import icons from '../../assets/icons'
 import images from '../../assets/images'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
+import { faStar as faStarSolid } from '@fortawesome/free-solid-svg-icons'
+import { faStar as faStarRegular } from '@fortawesome/free-regular-svg-icons'
 
 function Card25() {
     return (
         // card
-        <div className="w-45rem bg-white flex flex-col gap-y-7 pl-10 py-10 shadow-neutral-600/50 shadow-xl overflow-hidden font-monterrat">
+        <div className="w-45rem bg-white flex flex-col space-y-7 pl-10 py-10 shadow-neutral-600/50 shadow-xl overflow-hidden font-monterrat">
             {/* header */}
-            <div className="flex flex-row justify-between items-center gap-x-10 pe-10">
+            <div className="flex justify-between items-center space-x-10 pe-10">
                 {/* back to */}
-                <div className="w-full bg-blue-700 py-2 hover:bg-gray-700">
-                    <img className="ml-2" src={icons.iconArrowLeft25} alt="" />
-                </div>
+                <button className="w-full flex justify-start bg-blue-700 pl-2 py-2 hover:bg-gray-700">
+                    <FontAwesomeIcon icon={faArrowLeft} size="lg" color="white" />
+                </button>
     
                 {/* new products */}
                 <div className="flex-none">
@@ -20,7 +23,7 @@ function Card25() {
             </div>
     
             {/* content */}
-            <div className="flex flex-row gap-x-1 pe-10">
+            <div className="flex space-x-1 mx-4 pe-10">
                 {/* left */}
                 <div className="flex flex-col items-start grow shrink basis-1/2 space-y-2">
                     {/* info */}
@@ -42,7 +45,7 @@ function Card25() {
                 </div>
     
                 {/* right */}
-                <div className="flex flex-col grow shrink basis-1/2 gap-y-8">
+                <div className="flex flex-col flex-1 basis-1/2 gap-y-8">
                     {/* description */}
                     <div>
                         <p className="text-base font-light font-opensan leading-7">
@@ -57,13 +60,25 @@ function Card25() {
                         </div>
                     
                         {/* rate */}
-                        <div className="flex flex-row -ml-1">
-                            <img src={icons.iconStarFill25} alt="" />
-                            <img src={icons.iconStarFill25} alt="" />
-                            <img src={icons.iconStarFill25} alt="" />
-                            <img src={icons.iconStarFill25} alt="" />
-                            <img src={icons.iconStarNoFill25} alt="" />
-                            
+                        <div className="flex flex-row space-x-4">
+                            <div className="space-x-1">
+                                <button>
+                                    <FontAwesomeIcon icon={faStarSolid} color="#F7C01B" />
+                                </button>
+                                <button>
+                                    <FontAwesomeIcon icon={faStarSolid} color="#F7C01B" />
+                                </button>
+                                <button>
+                                    <FontAwesomeIcon icon={faStarSolid} color="#F7C01B" />
+                                </button>
+                                <button>
+                                    <FontAwesomeIcon icon={faStarSolid} color="#F7C01B" />
+                                </button>
+                                <button>
+                                    <FontAwesomeIcon icon={faStarRegular} color="#F7C01B" />
+                                </button>
+                            </div>
+
                             <p className="ml-3 text-base text-neutral-600">(64 reviews)</p>
                         </div>
                     </div>
@@ -88,7 +103,7 @@ function Card25() {
     
                     {/* add to cart */}
                     <div className="">
-                        <button className="px-8 py-3 bg-blue-700 text-white rounded-full hover:outline-2 hover:outline hover:outline-blue-700 hover:bg-white hover:text-blue-700">Add to cart</button>
+                        <button className="px-8 py-3 bg-blue-700 text-white rounded-full hover:outline-2 hover:outline hover:outline-blue-700 hover:bg-white hover:text-blue-700 transition-colors">Add to cart</button>
                     </div>
                 </div>
             </div>

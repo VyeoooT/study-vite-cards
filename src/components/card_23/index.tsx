@@ -1,6 +1,8 @@
 import './style.css'
-import icons from '../../assets/icons'
 import images from '../../assets/images'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAngleLeft, faAngleRight, faStar as faStarSolid } from '@fortawesome/free-solid-svg-icons'
+import { faStar as faStarRegular } from '@fortawesome/free-regular-svg-icons'
 
 function Card23() {
     return (
@@ -31,31 +33,45 @@ function Card23() {
     
                     {/* rate */}
                     <div className="flex flex-row -ml-1 space-x-1">
-                        <img src={icons.iconStarFill23} alt="" />
-                        <img src={icons.iconStarFill23} alt="" />
-                        <img src={icons.iconStarFill23} alt="" />
-                        <img src={icons.iconStarNoFill23} alt="" />
-                        <img src={icons.iconStarNoFill23} alt="" />
+                        <button>
+                            <FontAwesomeIcon icon={faStarSolid} color="#CF914C" />
+                        </button>
+                        <button>
+                            <FontAwesomeIcon icon={faStarSolid} color="#CF914C" />
+                        </button>
+                        <button>
+                            <FontAwesomeIcon icon={faStarSolid} color="#CF914C" />
+                        </button>
+                        <button>
+                            <FontAwesomeIcon icon={faStarRegular} color="#CF914C" />
+                        </button>
+                        <button>
+                            <FontAwesomeIcon icon={faStarRegular} color="#CF914C" />
+                        </button>
                     </div>
                 </div>
     
                 {/* bottom */}
                 <div className="flex flex-row justify-between items-center bg-neutral-200 px-5 py-6 top-shadow-card-23">
                     {/* arrow - left */}
-                    <div className="border-2 border-neutral-400 rounded-full z-10">
-                        <img className="w-full" src={icons.iconArrowLeft23} alt="" />
+                    <div className="w-8 h-8 p-1 flex justify-center items-center border-2 border-neutral-400 rounded-full z-10 hover:-translate-x-1 transition-transform">
+                        <button>
+                            <FontAwesomeIcon icon={faAngleLeft} color="#A3A3A3" />
+                        </button>
                     </div>
     
                     {/* img course */}
                     <div className="w-2/12 flex justify-center space-x-5 ">
-                        <img className="aspect-square border-4 border-white rounded-full" src={images.firtsImg23} alt="" />
-                        <img className="aspect-square border-4 border-amber-950/70 rounded-full" src={images.secondsImg23} alt="" />
-                        <img className="aspect-square border-4 border-white rounded-full" src={images.thirdImg23} alt="" />
+                        <img className="hover:cursor-pointer aspect-square border-4 border-white rounded-full" src={images.firtsImg23} alt="" />
+                        <img className="hover:cursor-pointer aspect-square border-4 border-amber-950/70 rounded-full" src={images.secondsImg23} alt="" />
+                        <img className="hover:cursor-pointer aspect-square border-4 border-white rounded-full" src={images.thirdImg23} alt="" />
                     </div>
 
                     {/* arrow - right */}
-                    <div className="border-2 border-neutral-400 rounded-full">
-                        <img src={icons.iconArrowRight23} alt="" />
+                    <div className="w-8 h-8 p-1 flex justify-center items-center border-2 border-neutral-400 rounded-full hover:translate-x-1 transition-transform">
+                        <button>
+                            <FontAwesomeIcon icon={faAngleRight} color="#A3A3A3" />
+                        </button>
                     </div>
                 </div>
             </div>

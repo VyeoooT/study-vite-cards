@@ -1,6 +1,8 @@
 import './style.css'
-import icons from '../../assets/icons'
 import images from '../../assets/images'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowLeft, faArrowRight, faCartFlatbed, faCartShopping, faMagnifyingGlass, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faOpencart } from '@fortawesome/free-brands-svg-icons'
 
 function Card22() {
     return (
@@ -15,23 +17,33 @@ function Card22() {
     
                 {/* arrow - left/right */}
                 <div className="w-full flex flex-row absolute translate-x-1/4 bottom-10 space-x-4">
-                    <img src={icons.iconArrowLeft22} alt="" />
-                    <img src={icons.iconArrowRight22} alt="" />
+                    <button className="hover:-translate-x-1">
+                        <FontAwesomeIcon icon={faArrowLeft} color="white" />
+                    </button>
+                    <button className="hover:translate-x-1">
+                        <FontAwesomeIcon icon={faArrowRight} color="white" />
+                    </button>
                 </div>
             </div>
     
             {/* right */}
-            <div className="w-full flex flex-col gap-y-20 basis-1/2 my-8">
+            <div className="flex flex-col gap-y-20 basis-1/2 my-8">
                 {/* header */}
                 <div className="flex flex-row justify-between items-center">
                     {/* brand */}
                     <p className="basis-3/6 text-xl text-orange-600 font-bold">Arimax</p>
     
                     {/* icon */}
-                    <div className="basis-2/6 flex flex-row justify-between">
-                        <img src={icons.iconSearch22} alt="" />
-                        <img src={icons.iconUser22} alt="" />
-                        <img src={icons.iconCart22} alt="" />
+                    <div className="basis-2/6 flex justify-between items-center">
+                        <button>
+                            <FontAwesomeIcon icon={faMagnifyingGlass} color="white" />
+                        </button>
+                        <button>
+                            <FontAwesomeIcon icon={faUser} color="white" />
+                        </button>
+                        <button>
+                            <FontAwesomeIcon icon={faCartShopping} color="white" />
+                        </button>
                     </div>
                 </div>
     
@@ -53,13 +65,23 @@ function Card22() {
                     </div>
     
                     {/* size */}
-                    <div className="w-4/5 flex flex-row justify-between text-white text-sm">
+                    <div className="w-4/5 flex justify-between text-white text-sm">
                         <p>SIZE</p>
-                        <p>7</p>
-                        <p>8</p>
-                        <p>9</p>
-                        <p>10</p>
-                        <p>11</p>
+                        <button>
+                            <p>7</p>
+                        </button>
+                        <button>
+                            <p>8</p>
+                        </button>
+                        <button>
+                            <p>9</p>
+                        </button>
+                        <button>
+                            <p>10</p>
+                        </button>
+                        <button>
+                            <p>11</p>
+                        </button>
                     </div>
     
                     {/* colors */}
@@ -67,23 +89,27 @@ function Card22() {
                         <p className="text-sm text-white">COLOR</p>
     
                         {/* color */}
-                        <div className="w-5 h-5 rounded-full bg-yellow-500"></div>
-                        <div className="w-5 h-5 rounded-full bg-black"></div>
-                        <div className="w-5 h-5 rounded-full bg-sky-500"></div>
+                        <button className="w-5 h-5 rounded-full bg-yellow-500"></button>
+                        <button className="w-5 h-5 rounded-full bg-black"></button>
+                        <button className="w-5 h-5 rounded-full bg-sky-500"></button>
                     </div>
     
                     {/* purchase */}
-                    <div className="w-full flex flex-row justify-start items-center text-white text-sm">
+                    <div className="w-full flex flex-row items-center text-white text-sm space-x-16">
                         {/* buy now */}
-                        <div className="flex flow-row basis-1/2 items-center space-x-2">
-                            <img src={icons.iconCart22} alt="" />
-                            <p>Buy Now</p>
+                        <div>
+                            <button className="flex flow-row basis-1/2 items-center space-x-2">
+                                <FontAwesomeIcon icon={faCartFlatbed} />
+                                <p>Buy Now</p>
+                            </button>
                         </div>
                         
                         {/* add to cart */}
-                        <div className="flex flow-row basis-1/2 items-center space-x-2">
-                            <img src={icons.iconCartBold22} alt="" />
-                            <p>Add To Cart</p>
+                        <div>
+                            <button className="flex flow-row basis-1/2 items-center space-x-2">
+                                <FontAwesomeIcon icon={faOpencart} />
+                                <p>Add To Cart</p>
+                            </button>
                         </div>
                     </div>
                 </div>

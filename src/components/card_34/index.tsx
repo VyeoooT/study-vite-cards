@@ -1,6 +1,8 @@
 import './style.css'
 import icons from '../../assets/icons'
 import images from '../../assets/images'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCartShopping, faShareNodes } from '@fortawesome/free-solid-svg-icons'
 
 function Card34() {
     return (
@@ -10,9 +12,11 @@ function Card34() {
             <div className="relative basis-1/2 h-5/6 bg-gradient-to-bl from-orange-400 from-30% via-orange-500 to-orange-700 px-3">
                 {/* header */}
                 <div className="flex justify-between items-center mt-3">
-                    <img src={icons.iconLogo34} alt="" />
+                    <img className="hover:cursor-pointer" src={icons.iconLogo34} alt="" />
                     <div className="flex justify-center items-center min-w-10 min-h-10 bg-white rounded-full">
-                        <img className="w-1/2" src={icons.iconShare34} alt="" />
+                        <button>
+                            <FontAwesomeIcon icon={faShareNodes} size="lg" color="#EA580C" />
+                        </button>
                     </div>
                 </div>
 
@@ -54,19 +58,19 @@ function Card34() {
 
                     <div className="flex items-center space-x-5 ml-2">
                         {/* blue */}
-                        <div className="w-5 h-5 rounded-full bg-blue-600"></div>
+                        <button className="w-5 h-5 rounded-full bg-blue-600"></button>
 
                         {/* red */}
-                        <div className="w-5 h-5 rounded-full bg-red-600"></div>
+                        <button className="w-5 h-5 rounded-full bg-red-600"></button>
 
                         {/* green */}
-                        <div className="w-5 h-5 rounded-full bg-green-600"></div>
+                        <button className="w-5 h-5 rounded-full bg-green-600"></button>
 
                         {/* orange */}
-                        <div className="w-3 h-3 rounded-full bg-orange-600 outline outline-neutral-400/30 outline-2 outline-offset-4"></div>
+                        <button className="w-3 h-3 rounded-full bg-orange-600 outline outline-neutral-400/30 outline-2 outline-offset-4"></button>
 
                         {/* gray */}
-                        <div className="w-5 h-5 rounded-full bg-gray-600"></div>
+                        <button className="w-5 h-5 rounded-full bg-gray-600"></button>
                     </div>
                 </div>
 
@@ -76,21 +80,22 @@ function Card34() {
 
                     {/* size */}
                     <div className="flex items-center space-x-4 ml-2">
-                        <p className="min-w-7 h-7 p-1 bg-neutral-200 rounded-md flex items-center justify-center text-sm font-medium">7</p>
-                        <p className="min-w-7 h-7 p-1 bg-neutral-200 rounded-md flex items-center justify-center text-sm font-medium">8</p>
-                        <p className="min-w-7 h-7 p-1 bg-orange-600 rounded-md flex items-center justify-center text-sm text-white font-medium">9</p>
-                        <p className="min-w-7 h-7 p-1 bg-neutral-200 rounded-md flex items-center justify-center text-sm font-medium">10</p>
-                        <p className="min-w-7 h-7 p-1 bg-neutral-200 rounded-md flex items-center justify-center text-sm font-medium">11</p>
+                        <button className="min-w-7 h-7 p-1 bg-neutral-200 rounded-md flex items-center justify-center text-sm font-medium">7</button>
+                        <button className="min-w-7 h-7 p-1 bg-neutral-200 rounded-md flex items-center justify-center text-sm font-medium">8</button>
+                        <button className="min-w-7 h-7 p-1 bg-orange-600 rounded-md flex items-center justify-center text-sm text-white font-medium">9</button>
+                        <button className="min-w-7 h-7 p-1 bg-neutral-200 rounded-md flex items-center justify-center text-sm font-medium">10</button>
+                        <button className="min-w-7 h-7 p-1 bg-neutral-200 rounded-md flex items-center justify-center text-sm font-medium">11</button>
                     </div>
                 </div>
 
                 {/* add cart - price */}
                 <div className="flex items-center justify-between pt-3">
                     {/* cart */}
-                    <button className="flex items-center py-2 px-2 bg-orange-600 text-sm text-white font-medium">
-                        <img src={icons.iconCart34} alt="" />
-                        ADD TO CART
+                    <button className="flex items-center py-2 px-4 space-x-2 bg-orange-600 text-white font-medium transition-all duration-300 ease-in-out hover:bg-black hover:text-white hover:rounded-full active:shadow-orange-200 active:shadow-inner">
+                        <FontAwesomeIcon icon={faCartShopping} size="1x" />
+                        <p>ADD TO CART</p>
                     </button>
+
 
                     {/* price */}
                     <p className="text-2xl font-bold">$189.99</p>

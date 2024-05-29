@@ -32,19 +32,19 @@ function Card35() {
                 {/* info */}
                 <div className="flex bg-yellow-600 text-white divide-x divide-yellow-900/50 ">
                     {/* time training */}
-                    <div className="flex flex-col items-center px-8 py-3">
+                    <div className="flex flex-col items-center px-8 py-3 hover:bg-slate-300 hover:text-yellow-800 transition-colors duration-300">
                         <p className="text-2xl font-bold">20s</p>
                         <p className="text-xs font-light">TRAINING</p>
                     </div>
 
                     {/* speed */}
-                    <div className="flex flex-col items-center px-8 py-3">
+                    <div className="flex flex-col items-center px-8 py-3 hover:bg-slate-300 hover:text-yellow-800 transition-colors duration-300">
                         <p className="text-2xl font-bold">16</p>
                         <p className="text-xs font-light">SPEED</p>
                     </div>
 
                     {/* time training */}
-                    <div className="flex flex-col items-center px-8 py-3">
+                    <div className="flex flex-col items-center px-8 py-3 hover:bg-slate-300 hover:text-yellow-800 transition-colors duration-300">
                         <p className="text-2xl font-bold">150</p>
                         <p className="text-xs font-light">COST</p>
                     </div>

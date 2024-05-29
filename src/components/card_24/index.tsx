@@ -1,6 +1,7 @@
 import './style.css'
-import icons from '../../assets/icons'
 import images from '../../assets/images'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 
 function Card24() {
     return (
@@ -26,11 +27,13 @@ function Card24() {
                 </div>
     
                 {/* purchase */}
-                <div className="flex flex-row mt-8">
-                    <button className="text-base text-black px-4 py-3 border-2 rounded-s-full border-r-2 border-neutral-600 hover:text-white hover:font-bold hover:bg-black">$115</button>
-                    <button className="flex text-base text-black px-4 py-3 border-2 rounded-e-full border-neutral-600">
-                        <img className="mr-2" src={icons.iconCart24} alt="" />ADD TO CART
+                <div className="flex flex-row mt-8 divide-x">
+                    <button className="text-base text-black px-4 py-3 border-2 border-neutral-600 rounded-s-full hover:bg-black hover:text-white hover:font-medium hover:border-transparent transition-all">$115</button>
+                    <button className="flex items-center px-4 py-3 border-2 border-neutral-600 rounded-e-full space-x-3 hover:bg-black hover:border-transparent transition-colors group">
+                        <FontAwesomeIcon className="group-hover:text-white transition-colors" icon={faCartShopping} />
+                        <p className="text-base text-black group-hover:text-white group-hover:font-medium transition-colors">ADD TO CART</p>
                     </button>
+
                 </div>
             </div>
             

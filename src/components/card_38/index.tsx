@@ -23,8 +23,8 @@ function Card38() {
 
                 {/* button */}
                 <div className="flex flex-col items-center space-y-3">
-                    <button className="min-w-36 px-3 py-1 bg-transparent border border-teal-900 text-base text-teal-900 font-medium rounded-full">Follow</button>
-                    <button className="min-w-36 px-3 py-1 bg-transparent border border-teal-900 text-base text-teal-900 font-medium rounded-full">Message</button>
+                    <button className="min-w-36 px-3 py-1 bg-transparent border border-teal-900 text-base text-teal-900 font-medium rounded-full hover:min-w-40 active:shadow-teal-900 active:shadow-inner transition-all">Follow</button>
+                    <button className="min-w-36 px-3 py-1 bg-transparent border border-teal-900 text-base text-teal-900 font-medium rounded-full hover:min-w-40 active:shadow-teal-900 active:shadow-inner transition-all">Message</button>
                 </div>
             </div>
 

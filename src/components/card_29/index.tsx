@@ -1,6 +1,7 @@
 import './style.css'
-import icons from '../../assets/icons'
 import images from '../../assets/images'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHeart } from '@fortawesome/free-solid-svg-icons'
 
 function Card29() {
     return (
@@ -18,14 +19,14 @@ function Card29() {
                     <p className="text-sm text-pink-900/60">CHOOSE SIZE</p>
 
                     <div className="flex flex-row justify-between text-pink-900/60">
-                        <p className="min-w-10 h-10 p-2 border-2 flex items-center justify-center">5</p>
-                        <p className="min-w-10 h-10 p-2 border-2 flex items-center justify-center">6</p>
-                        <p className="min-w-10 h-10 p-2 border-2 flex items-center justify-center bg-pink-900/60 text-white">7</p>
-                        <p className="min-w-10 h-10 p-2 border-2 flex items-center justify-center">8</p>
-                        <p className="min-w-10 h-10 p-2 border-2 flex items-center justify-center">9</p>
-                        <p className="min-w-10 h-10 p-2 border-2 flex items-center justify-center">10</p>
-                        <p className="min-w-10 h-10 p-2 border-2 flex items-center justify-center">11</p>
-                        <p className="min-w-10 h-10 p-2 border-2 flex items-center justify-center">12</p>
+                        <button className="min-w-10 h-10 p-2 border-2 flex items-center justify-center">5</button>
+                        <button className="min-w-10 h-10 p-2 border-2 flex items-center justify-center">6</button>
+                        <button className="min-w-10 h-10 p-2 border-2 flex items-center justify-center bg-pink-900/60 text-white">7</button>
+                        <button className="min-w-10 h-10 p-2 border-2 flex items-center justify-center">8</button>
+                        <button className="min-w-10 h-10 p-2 border-2 flex items-center justify-center">9</button>
+                        <button className="min-w-10 h-10 p-2 border-2 flex items-center justify-center">10</button>
+                        <button className="min-w-10 h-10 p-2 border-2 flex items-center justify-center">11</button>
+                        <button className="min-w-10 h-10 p-2 border-2 flex items-center justify-center">12</button>
                     </div>
                 </div>
             </div>
@@ -53,10 +54,10 @@ function Card29() {
                     </p>
 
                     <div className="flex flex-row divide-x">
-                        <button className="basis-4/5 py-2 bg-pink-900/60 rounded-sm text-white font-medium">ADD TO CART</button>
+                        <button className="basis-4/5 py-2 bg-pink-900/60 rounded-sm text-white font-medium hover:bg-pink-400 transition-colors active:shadow-neutral-500/50 active:shadow-inner">ADD TO CART</button>
 
-                        <button className="basis-1/5 py-2 bg-pink-900/40 rounded-sm flex justify-center">
-                            <img src={icons.iconHeart29} alt="" />
+                        <button className="basis-1/5 py-2 bg-pink-900/40 rounded-sm flex justify-center hover:bg-pink-300 transition-colors active:shadow-neutral-500/50 active:shadow-inner group">
+                            <FontAwesomeIcon className="group-hover:text-pink-400" icon={faHeart} size="2xl" color="white" />
                         </button>
                     </div>
                 </div>

@@ -15,16 +15,16 @@ function Card32() {
                     {/* select color */}
                     <div className="flex space-x-5">
                         {/* orange color */}
-                        <div className="w-3 h-3 bg-orange-600 rounded-full outline outline-offset-1 outline-1"></div>
+                        <button className="w-4 h-4 bg-orange-600 rounded-full outline outline-offset-1 outline-1"></button>
 
                         {/* blue color */}
-                        <div className="w-3 h-3 bg-emerald-500 rounded-full"></div>
+                        <button className="w-4 h-4 bg-emerald-500 rounded-full"></button>
 
                         {/* black color */}
-                        <div className="w-3 h-3 bg-black rounded-full"></div>
+                        <button className="w-4 h-4 bg-black rounded-full"></button>
 
                         {/* red color */}
-                        <div className="w-3 h-3 bg-red-500 rounded-full"></div>
+                        <button className="w-4 h-4 bg-red-500 rounded-full"></button>
                     </div>
 
                     {/* name */}
@@ -33,15 +33,15 @@ function Card32() {
                     </div>
                 </div>
 
-                <div className="flex flex-col items-center space-y-2">
+                <div className="flex flex-col items-center space-y-5">
                     {/* price */}
-                    <div className="flex text-xl space-x-2">
-                        <p className="font-light">Price: </p><p className="text-orange-600">$50</p>
+                    <div className="flex justify-center items-center space-x-2">
+                        <p className="text-xl font-light">Price: </p><p className="text-2xl font-medium text-orange-600">$50</p>
                     </div>
 
                     {/* button */}
                     <div>
-                        <button className="py-2 px-10 bg-orange-600 rounded-xl text-white">Add To Card</button>
+                        <button className="py-1 px-10 bg-orange-600 rounded-xl text-white border-2 border-transparent hover:border-orange-600 hover:bg-white hover:text-orange-600 transition-all active:translate-y-1">Add To Card</button>
                     </div>
                 </div>
             </div>

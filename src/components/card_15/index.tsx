@@ -32,7 +32,7 @@ function Card15() {
 
                         {/* button */}
                         <div>
-                            <button className="px-8 py-3 bg-yellow-500 rounded-md">View More</button>
+                            <button className="px-8 py-3 bg-yellow-500 rounded-md hover:shadow-yellow-800 hover:shadow-md transition-shadow active:shadow-yellow-300 active:shadow-inner">View More</button>
                         </div>
                     </div>
                 </div>

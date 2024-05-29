@@ -1,6 +1,9 @@
 import './style.css'
-import icons from '../../assets/icons'
 import images from '../../assets/images'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCheckCircle, faEllipsisVertical } from '@fortawesome/free-solid-svg-icons'
+import { faBehance, faGooglePlus, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook } from '@fortawesome/free-brands-svg-icons/faFacebook'
 
 function Card37() {
     return (
@@ -8,7 +11,7 @@ function Card37() {
         <div className="w-80 bg-white pt-4 pb-10 text-neutral-700 rounded-md shadow-neutral-500/50 shadow-lg">
             {/* more button */}
             <div className="flex justify-end pr-2">
-                <img src={icons.iconMore37} alt="" />
+                <FontAwesomeIcon icon={faEllipsisVertical} />
             </div>
 
             {/* contents */}
@@ -18,9 +21,9 @@ function Card37() {
                     <div className="w-1/3 relative">
                         <img src={images.avt} alt="" />
 
-                        {/* tick */}
-                        <div className="absolute bottom-1 right-1 bg-white rounded-full shadow-tick-card-37 z-10">
-                            <img className="" src={icons.iconTick37} alt="" />
+                        {/* tick-green */}
+                        <div className="absolute bottom-1 right-1 z-10">
+                            <FontAwesomeIcon className="shadow-tick-card-37 rounded-full" icon={faCheckCircle} color="#4ECB71" />
                         </div>
                     </div>
 
@@ -61,16 +64,24 @@ function Card37() {
 
                     {/* social */}
                     <div className="flex items-center space-x-4">
-                        <img className="rounded-full" src={icons.iconTwitter37} alt="" />
-                        <img src={icons.iconFacebook37} alt="" />
-                        <img src={icons.iconGoogle37} alt="" />
-                        <img className="rounded-full" src={icons.iconBehance37} alt="" />
+                        <button className="w-6 h-6 bg-cyan-500 rounded-full">
+                            <FontAwesomeIcon icon={faTwitter} color="white" size='xs' />
+                        </button>
+                        <button>
+                            <FontAwesomeIcon icon={faFacebook} color="#3b5b96" size="xl" />
+                        </button>
+                        <button>
+                            <FontAwesomeIcon icon={faGooglePlus} color="#ff775e" size="xl" />
+                        </button>
+                        <button className="w-6 h-6 bg-blue-700 rounded-full">
+                            <FontAwesomeIcon icon={faBehance} color="white" size='xs' />
+                        </button>
                     </div>
                 </div>
 
                 {/* button */}
                 <div className="flex justify-center">
-                    <button className="px-14 py-2 bg-transparent border border-neutral-400 rounded-full font-light">View Profile</button>
+                    <button className="px-14 py-2 bg-transparent border border-neutral-400 rounded-full font-light hover:border-transparent hover:bg-cyan-500 hover:text-white hover:shadow-neutral-300 hover:shadow-lg active:shadow-cyan-800 active:shadow-inner transition-all duration-300 ease-in-out">View Profile</button>
                 </div>
             </div>
         </div>

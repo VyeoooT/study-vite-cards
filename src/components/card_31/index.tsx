@@ -1,6 +1,8 @@
 import './style.css'
-import icons from '../../assets/icons'
 import images from '../../assets/images'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faStar as faStarSolid } from '@fortawesome/free-solid-svg-icons'
+import { faStar as faStarRegular } from '@fortawesome/free-regular-svg-icons'
 
 function Card31() {
     return (
@@ -26,11 +28,11 @@ function Card31() {
 
                 {/* rate */}
                 <div className="flex space-x-2">
-                    <img src={icons.iconStarOrange31} alt="" />
-                    <img src={icons.iconStarOrange31} alt="" />
-                    <img src={icons.iconStarOrange31} alt="" />
-                    <img src={icons.iconStarOrange31} alt="" />
-                    <img src={icons.iconStarBlack31} alt="" />
+                    <FontAwesomeIcon icon={faStarSolid} color="#FAA04D" size="xl" />
+                    <FontAwesomeIcon icon={faStarSolid} color="#FAA04D" size="xl" />
+                    <FontAwesomeIcon icon={faStarSolid} color="#FAA04D" size="xl" />
+                    <FontAwesomeIcon icon={faStarSolid} color="#FAA04D" size="xl" />
+                    <FontAwesomeIcon icon={faStarRegular} color="#FAA04D" size="xl" />
                 </div>
             </div>
 

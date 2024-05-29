@@ -1,6 +1,8 @@
 import './style.css'
-import icons from '../../assets/icons'
 import images from '../../assets/images'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faClock } from '@fortawesome/free-solid-svg-icons'
+import { faCommentDots } from '@fortawesome/free-regular-svg-icons'
 
 function Card40() {
     return (
@@ -36,13 +38,13 @@ function Card40() {
 
                 {/* info */}
                 <div className="flex justify-between items-center">
-                    <div className="flex items-center space-x-1">
-                        <img src={icons.iconTimer40} alt="" />
+                    <div className="flex items-center space-x-2">
+                        <FontAwesomeIcon icon={faClock} size="sm" />
                         <p className="text-sm text-gray-800">6 mins ago</p>
                     </div>
 
-                    <div className="flex items-center space-x-1">
-                        <img src={icons.iconComment40} alt="" />
+                    <div className="flex items-center space-x-2">
+                        <FontAwesomeIcon icon={faCommentDots} />
                         <p className="text-sm text-gray-800">39 Comments</p>
                     </div>
                 </div>

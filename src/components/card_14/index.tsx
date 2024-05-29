@@ -1,6 +1,8 @@
 import './style.css'
-import icons from '../../assets/icons'
 import images from '../../assets/images'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope, faGlobe, faMobileButton } from '@fortawesome/free-solid-svg-icons'
+import { faFacebook, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
 function Card14() {
     return (
@@ -12,7 +14,7 @@ function Card14() {
                 <div className="w-11/12 bg-emerald-400 flex flex-col items-center rounded-2xl -translate-y-10 py-6 shadow-black/30 shadow-lg">
                     {/* avatar */}
                     <div className="w-1/2">
-                        <img className="w-full" src={images.avt} alt="" />
+                        <img className="w-full" src={images.avt} alt="" color="#16A085" />
                     </div>
     
                     {/* info */}
@@ -27,12 +29,12 @@ function Card14() {
             </div>
     
             {/* center - contact */}
-            <div className="w-full mx-5 my-3 overflow-hidden space-y-3">
+            <div className="flex flex-col items-start mx-5 my-3 overflow-hidden space-y-3">
                 {/* phone */}
-                <div className="flex flex-row flex-wrap items-center space-x-2">
+                <div className="w-full flex flex-row flex-wrap items-center space-x-2">
                     {/* icon */}
-                    <div>
-                        <img className="w-3/4" src={icons.iconPhone14} alt="" />
+                    <div className="basis-10 flex justify-center">
+                        <FontAwesomeIcon className="hover:cursor-pointer" icon={faMobileButton} color="#16A085" size="xl" />
                     </div>
     
                     {/* text */}
@@ -43,10 +45,10 @@ function Card14() {
                 </div>
     
                 {/* mail */}
-                <div className="flex flex-row flex-wrap items-center space-x-2">
+                <div className="w-full flex flex-row flex-wrap items-center space-x-2">
                     {/* icon */}
-                    <div>
-                        <img className="w-3/4" src={icons.iconLetter14} alt="" />
+                    <div className="basis-10 flex justify-center">
+                        <FontAwesomeIcon className="hover:cursor-pointer" icon={faEnvelope} color="#16A085" size="xl" />
                     </div>
     
                     {/* text */}
@@ -57,10 +59,10 @@ function Card14() {
                 </div>
     
                 {/* website */}
-                <div className="flex flex-row flex-wrap items-center space-x-2">
+                <div className="w-full flex flex-row flex-wrap items-center space-x-2">
                     {/* icon */}
-                    <div>
-                        <img className="w-3/4" src={icons.iconWeb14} alt="" />
+                    <div className="basis-10 flex justify-center">
+                        <FontAwesomeIcon className="hover:cursor-pointer" icon={faGlobe} color="#16A085" size="xl" />
                     </div>
     
                     {/* text */}
@@ -75,10 +77,18 @@ function Card14() {
             <div className="w-full flex flex-row justify-center">
                 {/* social */}
                 <div className="w-11/12 flex flex-row flex-wrap justify-evenly bg-emerald-400 py-5 rounded-2xl translate-y-1/2 shadow-black/10 shadow-lg">
-                    <img className="w-1/12" src={icons.iconFb14} alt="" />
-                    <img className="w-1/12" src={icons.iconIg14} alt="" />
-                    <img className="w-1/12" src={icons.iconLinkedin14} alt="" />
-                    <img className="w-1/12" src={icons.iconTwitter14} alt="" />
+                    <button>
+                        <FontAwesomeIcon icon={faFacebook} size="xl" />
+                    </button>
+                    <button>
+                        <FontAwesomeIcon icon={faInstagram} size="xl" />
+                    </button>
+                    <button>
+                        <FontAwesomeIcon icon={faLinkedin} size="xl" />
+                    </button>
+                    <button>
+                        <FontAwesomeIcon icon={faTwitter} size="xl" />
+                    </button>
                 </div>
             </div>
         </div>

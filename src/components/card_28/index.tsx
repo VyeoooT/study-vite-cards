@@ -4,10 +4,10 @@ import images from '../../assets/images'
 function Card28() {
     return (
         // card
-        <div className="w-42rem flex flex-row bg-white rounded-md shadow-neutral-500/50 shadow-lg overflow-hidden">
+        <div className="w-42rem flex bg-white rounded-md shadow-neutral-500/50 shadow-lg overflow-hidden">
             {/* left */}
             <div className="basis-1/2">
-                <img className="w-full object-cover" src={images.imgCard28} alt="" />
+                <img className="w-full h-full object-cover" src={images.imgCard28} alt="" />
             </div>
 
             {/* right */}
@@ -26,12 +26,12 @@ function Card28() {
                 </div>
 
                 {/* price - button */}
-                <div className="flex flex-row justify-between items-center">
+                <div className="flex justify-between items-center">
                     {/* price */}
                     <p className="text-3xl font-medium">78$</p>
 
                     {/* button */}
-                    <button className="py-3 px-14 bg-emerald-500/50 text-white rounded-full">BUY NOW</button>
+                    <button className="py-3 px-14 bg-emerald-500/50 text-white rounded-full border-2 border-transparent hover:bg-white hover:text-emerald-500 hover:border-emerald-600 transition-colors active:shadow-neutral-500/50 active:shadow-inner">BUY NOW</button>
                 </div>
             </div>
         </div>

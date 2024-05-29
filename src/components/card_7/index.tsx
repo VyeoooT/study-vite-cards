@@ -1,6 +1,8 @@
 import './style.css'
-import icons from '../../assets/icons'
+// import icons from '../../assets/icons'
 import images from '../../assets/images'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebookF, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
 function Card7() {
     return (
@@ -27,9 +29,15 @@ function Card7() {
 
                 {/* social */}
                 <div className="flex flex-row flex-wrap justify-center space-x-4">
-                    <img src={icons.iconFb7} alt="" />
-                    <img src={icons.iconGit7} alt="" />
-                    <img src={icons.iconLinkedin7} alt="" />
+                    <button className="min-w-8 min-h-8 px-1 py-1 outline outline-2 outline-black rounded-full opacity-80 hover:cursor-pointer hover:opacity-100 transition-opacity">
+                        <FontAwesomeIcon icon={faFacebookF} />
+                    </button>
+                    <button className="min-w-8 min-h-8 px-1 py-1 outline outline-2 outline-black rounded-full opacity-80 hover:cursor-pointer hover:opacity-100 transition-opacity">
+                        <FontAwesomeIcon icon={faLinkedin} />
+                    </button>
+                    <button className="min-w-8 min-h-8 px-1 py-1 outline outline-2 outline-black rounded-full opacity-80 hover:cursor-pointer hover:opacity-100 transition-opacity">
+                        <FontAwesomeIcon icon={faTwitter} />
+                    </button>
                 </div>
             </div>
         </div>

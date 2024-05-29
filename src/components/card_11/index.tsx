@@ -1,6 +1,8 @@
 import './style.css'
-import icons from '../../assets/icons'
 import images from '../../assets/images'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faStar as faStarSolid } from '@fortawesome/free-solid-svg-icons'
+import { faStar as faStarRegular } from '@fortawesome/free-regular-svg-icons'
 
 function Card11() {
     return (
@@ -23,11 +25,21 @@ function Card11() {
 
                     {/* rate */}
                     <div className="flex flex-row flex-wrap justify-center space-x-1">
-                        <img src={icons.iconStarFill11} alt="" />
-                        <img src={icons.iconStarFill11} alt="" />
-                        <img src={icons.iconStarFill11} alt="" />
-                        <img src={icons.iconStarNoFill11} alt="" />
-                        <img src={icons.iconStarNoFill11} alt="" />
+                        <button>
+                            <FontAwesomeIcon icon={faStarSolid} style={{ color: "#9340AA" }} />
+                        </button>
+                        <button>
+                            <FontAwesomeIcon icon={faStarSolid} style={{ color: "#9340AA" }} />
+                        </button>
+                        <button>
+                            <FontAwesomeIcon icon={faStarSolid} style={{ color: "#9340AA" }} />
+                        </button>
+                        <button>
+                            <FontAwesomeIcon icon={faStarRegular} style={{ color: "#9340AA" }} />
+                        </button>
+                        <button>
+                            <FontAwesomeIcon icon={faStarRegular} style={{ color: "#9340AA" }} />
+                        </button>
                     </div>
                 </div>
 
@@ -37,9 +49,9 @@ function Card11() {
                 </div>
 
                 {/* button */}
-                <div className="w-full flex flex-row flex-wrap justify-around">
-                    <button className="px-5 py-2 rounded-md border-2 border-purple-600 text-purple-600">Read More</button>
-                    <button className="px-5 py-2 rounded-md bg-purple-600 text-white">Subscribe</button>
+                <div className="w-full flex flex-row flex-wrap justify-between">
+                    <button className="px-5 py-2 rounded-md border-2 border-purple-600 text-purple-600 hover:border-transparent hover:bg-purple-600 hover:text-white transition-colors">Read More</button>
+                    <button className="px-5 py-2 rounded-md bg-purple-600 text-white border-2 border-transparent hover:bg-white hover:text-purple-600 hover:border-purple-600 transition-colors">Subscribe</button>
                 </div>
             </div>
         </div>

@@ -1,18 +1,23 @@
 import './style.css'
 import images from '../../assets/images'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
 
 function Card1() {
   return (
     /* card */
     <div className="relative w-60 rounded-xl shadow-neutral-500/50 shadow-lg">
       {/* btn plus */}
-      <div className="absolute w-2/12 aspect-square rounded-full bg-rose-500 -right-1/4 top-1/4 -translate-x-full shadow-button-card-1">
-        <span className="absolute w-6 h-0.5 bg-white top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2"></span>
-        <span className="absolute w-6 h-0.5 bg-white top-1/2 left-1/2 rotate-90 -translate-y-1/2 -translate-x-1/2"></span>
+      <div className="absolute top-1/4 right-0 translate-x-1/2 rounded-full bg-rose-500 shadow-button-card-1 hover:shadow-none hover:transition-shadow active:translate-y-1 active:transition-transform active:shadow-rose-700 active:shadow-inner">
+        <button className="min-w-10 min-h-10 px-2 py-2 rounded-full">
+          <FontAwesomeIcon icon={faPlus} style={{color: "white"}} />
+        </button>
       </div>
 
       {/* top */}
       <div className="w-full bg-gray-200 flex flex-col items-center py-6 text-center rounded-tl-xl rounded-tr-xl overflow-hidden">
+        {/* avt */}
         <div className="w-2/4">
           <img className="w-full" src={images.avt} alt="" />
         </div>
@@ -44,15 +49,17 @@ function Card1() {
 
         {/* button - message*/}
         <div className="text-center">
-          <button className="text-xs py-3 px-10 bg-teal-500 rounded-full text-white font-bold">
+          <button className="text-xs py-3 px-10 bg-teal-500 rounded-full text-white font-bold hover:shadow-teal-300 hover:shadow-inner transition-colors active:bg-teal-300">
             Send Message
           </button>
         </div>
 
         {/* more */}
-        <div className="flex flex-row items-center">
-          <p className="text-xs text-gray-500 uppercase">More</p>
-          <img src={images.iconArrowDown} alt="" />
+        <div>
+          <button className="flex flex-row items-center space-x-1 transition-transform hover:-translate-y-1">
+            <p className="text-xs text-gray-500">MORE</p>
+            <FontAwesomeIcon icon={faChevronDown} style={{color: "gray"}} size="2xs"/>
+          </button>
         </div>
       </div>
     </div>

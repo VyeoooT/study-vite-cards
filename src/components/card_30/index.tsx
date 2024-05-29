@@ -1,11 +1,12 @@
 import './style.css'
-import icons from '../../assets/icons'
 import images from '../../assets/images'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBed, faGears, faHeart, faShower, faVectorSquare } from '@fortawesome/free-solid-svg-icons'
 
 function Card30() {
     return (
         // card
-        <div className="w-96 bg-white flex flex-col space-y-3">
+        <div className="w-96 bg-white flex flex-col pb-5 space-y-3">
             {/* top */}
             <div className="relative">
                 {/* featured */}
@@ -16,9 +17,13 @@ function Card30() {
                     <div className="flex flex-row justify-between items-center mx-5">
                         <div className="text-sm text-white py-1 px-2 bg-orange-500">Hot</div>
 
-                        <div className="flex flex-row">
-                            <img src={icons.iconHeart30} alt="" />
-                            <img src={icons.iconSetting30} alt="" />
+                        <div className="flex space-x-3">
+                            <button>
+                                <FontAwesomeIcon icon={faHeart} color="white" size="lg" />
+                            </button>
+                            <button>
+                                <FontAwesomeIcon icon={faGears} color="white" size="lg" />
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -40,8 +45,8 @@ function Card30() {
                     <div className="flex flex-col space-y-1">
                         <p className="text-base font-bold">Bedrooms</p>
 
-                        <div className="flex flex-row items-center">
-                            <img src={icons.iconBedrooms30} alt="" />
+                        <div className="flex items-center space-x-3">
+                            <FontAwesomeIcon icon={faBed} color="#858585" size="lg" />
                             <p className="">3</p>
                         </div>
                     </div>
@@ -50,8 +55,8 @@ function Card30() {
                     <div className="flex flex-col space-y-1">
                         <p className="text-base font-bold">Bathrooms</p>
                         
-                        <div className="flex flex-row items-center">
-                            <img src={icons.iconBathrooms30} alt="" />
+                        <div className="flex items-center space-x-3">
+                            <FontAwesomeIcon icon={faShower} color="#858585" size="lg" />
                             <p className="">3</p>
                         </div>
                     </div>
@@ -60,8 +65,8 @@ function Card30() {
                     <div className="flex flex-col space-y-1">
                         <p className="text-base font-bold">Area</p>
                         
-                        <div className="flex flex-row items-center">
-                            <img src={icons.iconArea30} alt="" />
+                        <div className="flex items-center space-x-3">
+                            <FontAwesomeIcon icon={faVectorSquare} color="#858585" size="lg" />
                             <p className="">4300m2</p>
                         </div>
                     </div>

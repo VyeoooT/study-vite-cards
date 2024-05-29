@@ -17,8 +17,8 @@ function Card39() {
             <div className="flex flex-col items-start mx-3 space-y-5">
                 {/* tag */}
                 <div className="flex space-x-2">
-                    <button className="px-2 py-1 border border-gray-300 rounded-full text-xs text-gray-500">Nature</button>
-                    <button className="px-2 py-1 border border-gray-300 rounded-full text-xs text-gray-500">Lake</button>
+                    <button className="px-2 py-1 border border-gray-300 rounded-full text-xs text-gray-500 active:shadow-sky-900 active:shadow-inner transition-all">Nature</button>
+                    <button className="px-2 py-1 border border-gray-300 rounded-full text-xs text-gray-500 active:shadow-sky-900 active:shadow-inner transition-all">Lake</button>
                 </div>
 
                 {/* name */}
@@ -35,7 +35,7 @@ function Card39() {
 
                 {/* button */}
                 <div className="w-full flex justify-center -translate-y-1">
-                    <button className="px-8 py-2 bg-sky-200 rounded-full text-sm font-medium text-sky-600">Read More</button>
+                    <button className="px-8 py-2 bg-sky-200 rounded-full text-sm font-medium text-sky-600 hover:px-20 active:shadow-sky-900 active:shadow-inner transition-all">Read More</button>
                 </div>
             </div>
         </div>

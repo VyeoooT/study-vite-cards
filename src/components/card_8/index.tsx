@@ -1,6 +1,9 @@
 import './style.css'
-import icons from '../../assets/icons'
 import images from '../../assets/images'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook, faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faStar as faStarSolid } from '@fortawesome/free-solid-svg-icons'
+import { faStar as faStarRegular } from '@fortawesome/free-regular-svg-icons'
 
 function Card8() {
     return (
@@ -12,10 +15,10 @@ function Card8() {
                 <div className="effect bg-cyan-400"></div>
     
                 {/* social */}
-                <div className="absolute top-5 right-5 space-y-2">
-                    <img src={icons.iconFb8} alt="" />
-                    <img src={icons.iconGit8} alt="" />
-                    <img src={icons.iconTwitter8} alt="" />
+                <div className="absolute top-5 right-5 flex flex-col space-y-3 z-10">
+                    <FontAwesomeIcon className="hover:cursor-pointer" icon={faFacebook} style={{ color: "white" }}/>
+                    <FontAwesomeIcon className="hover:cursor-pointer" icon={faGithub} style={{ color: "white" }}/>
+                    <FontAwesomeIcon className="hover:cursor-pointer" icon={faTwitter} style={{ color: "white" }}/>
                 </div>
     
                 {/* avatar */}
@@ -37,17 +40,17 @@ function Card8() {
     
                 {/* rating */}
                 <div className="flex flex-row flex-wrap justify-center space-x-1">
-                    <img src={icons.iconStarFill8} alt="" />
-                    <img src={icons.iconStarFill8} alt="" />
-                    <img src={icons.iconStarFill8} alt="" />
-                    <img src={icons.iconStarFill8} alt="" />
-                    <img src={icons.iconStarNoFill8} alt="" />
+                    <FontAwesomeIcon className="hover:cursor-pointer" icon={faStarSolid} style={{ color: "#22D3EE" }} />
+                    <FontAwesomeIcon className="hover:cursor-pointer" icon={faStarSolid} style={{ color: "#22D3EE" }} />
+                    <FontAwesomeIcon className="hover:cursor-pointer" icon={faStarSolid} style={{ color: "#22D3EE" }} />
+                    <FontAwesomeIcon className="hover:cursor-pointer" icon={faStarSolid} style={{ color: "#22D3EE" }} />
+                    <FontAwesomeIcon className="hover:cursor-pointer" icon={faStarRegular} style={{ color: "#22D3EE" }} />
                 </div>
 
                 {/* button */}
                 <div className="flex flex-row justify-around">
-                    <button className="px-6 py-2 bg-cyan-400 rounded-full text-xs font-medium">About Me</button>
-                    <button className="px-6 py-2 bg-cyan-400 rounded-full text-xs font-medium">Hire Me</button>
+                    <button className="px-6 py-2 bg-cyan-400 rounded-full text-xs font-medium hover:shadow-cyan-400/50 hover:shadow-md active:shadow-cyan-800 active:shadow-inner transition-shadow">About Me</button>
+                    <button className="px-6 py-2 bg-cyan-400 rounded-full text-xs font-medium hover:shadow-cyan-400/50 hover:shadow-md active:shadow-cyan-800 active:shadow-inner transition-shadow">Hire Me</button>
                 </div>
             </div>
         </div>

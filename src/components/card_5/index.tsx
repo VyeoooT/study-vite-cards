@@ -1,6 +1,8 @@
 import './style.css'
-import icons from '../../assets/icons'
 import images from '../../assets/images'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope, faHeart } from '@fortawesome/free-regular-svg-icons'
+import { faUserGroup } from '@fortawesome/free-solid-svg-icons'
 
 function Card_5() {
     return (
@@ -37,9 +39,9 @@ function Card_5() {
 
                 {/* icons */}
                 <div className="w-full flex flex-row justify-around pb-6">
-                    <img src={icons.iconHeart} alt="" />
-                    <img src={icons.iconLetter} alt="" />
-                    <img src={icons.iconUser} alt="" />
+                    <FontAwesomeIcon className="hover:cursor-pointer" icon={faHeart} size="xl" style={{color: "#8CC14D"}}/>
+                    <FontAwesomeIcon className="hover:cursor-pointer" icon={faEnvelope} size="xl" style={{color: "#8CC14D"}}/>
+                    <FontAwesomeIcon className="hover:cursor-pointer" icon={faUserGroup} size="xl" style={{color: "#8CC14D"}}/>
                 </div>
             </div>
         </div>
