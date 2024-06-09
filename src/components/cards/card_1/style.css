@@ -1,3 +1,11 @@
 .shadow-button-card-1 {
   box-shadow: 0 2px 20px 0 #F43F5E;
 }
+
+.card1 {
+  @apply absolute top-32 right-0 translate-x-1/2 rounded-full bg-rose-500 shadow-button-card-1 hover:shadow-none hover:transition-shadow active:translate-y-1 active:transition-transform active:shadow-rose-700 active:shadow-inner
+}
+
+.transition-max-height {
+  transition: max-height 1s linear;
+}

@@ -1,9 +1,54 @@
 import './styles.css'
 import images from '../../../assets/images'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowLeft, faArrowRight, faCircleMinus, faCirclePlus } from '@fortawesome/free-solid-svg-icons'
+import { faArrowLeft, faArrowRight, faCircleCheck, faCircleMinus, faCirclePlus } from '@fortawesome/free-solid-svg-icons'
+
+import { useState } from 'react'
 
 function Card18() {
+    // notification add to cart
+    const [disableBtn, setDisableBtn] = useState(false)
+    const [notiAddCart, setNotiAddCart] = useState(false)
+
+    const disableButton = () => {
+        setDisableBtn(true)
+        setNotiAddCart(true)
+
+        setTimeout(() => {
+            setDisableBtn(false)
+            setNotiAddCart(false)
+        }, 1200)
+    }
+
+    // count quantity
+    const [counter, setCounter] = useState(1)
+    const [total, setTotal] = useState(7.99)
+    const unitPrice = 7.99
+
+    const countIncrease = () => {
+        setCounter(prevCount => {
+            const newCounter = prevCount + 1
+            setTotal(newCounter * unitPrice)
+
+            return newCounter
+        })
+    }
+
+    const countDecrease = () => {
+        setCounter(prevCount => {
+            const newCounter = prevCount - 1
+
+            if (newCounter > 1) {
+                setTotal(newCounter * unitPrice)
+                return newCounter
+            }
+            else {
+                return 1
+            }
+
+        })
+    }
+
     return (
         // card
         <div className="w-96 bg-white relative shadow-neutral-500/50 shadow-xl">
@@ -49,13 +94,13 @@ function Card18() {
 
                             {/* select quantity */}
                             <div className="flex justify-center items-center">
-                                <button>
+                                <button onClick={countDecrease}>
                                     <FontAwesomeIcon icon={faCircleMinus} color="#929292" />
                                 </button>
 
-                                <input className="w-8 px-1 text-center text-gray-600" type="text" defaultValue="1"/>
+                                <input className="w-8 px-1 text-center text-gray-600" type="text" readOnly value={counter} />
                                 
-                                <button>
+                                <button onClick={countIncrease}>
                                     <FontAwesomeIcon icon={faCirclePlus} color="#929292" />
                                 </button>
                             </div>
@@ -69,7 +114,7 @@ function Card18() {
                             {/* price */}
                             <div className="flex justify-center">
                                 <img src="/img/icon-dollar.png" alt="" />
-                                <p className="text-xl text-gray-700 font-medium">7</p>
+                                <p className="text-xl text-gray-700 font-medium">{total}</p>
                             </div>
                         </div>
 
@@ -87,9 +132,23 @@ function Card18() {
 
                     {/* button */}
                     <div className="w-full text-center translate-y-1/2">
-                        <button className="px-14 py-2 bg-red-600 uppercase text-sm text-white font-semibold rounded-full shadow-red-400/50 shadow-xl hover:-translate-y-1 hover:shadow-none transition-transform active:shadow-red-900 active:shadow-inner">add to cart</button>
+                        <button
+                            className="px-14 py-2 bg-red-600 uppercase text-sm text-white font-semibold rounded-full shadow-red-400/50 shadow-xl hover:-translate-y-1 hover:shadow-none transition-transform active:shadow-red-900 active:shadow-inner disabled:bg-red-400 disabled:translate-y-0 disabled:shadow-none"
+                            disabled={disableBtn}
+                            onClick={disableButton}
+                        >
+                            add to cart
+                        </button>
                     </div>
                 </div>
+
+                {/* add to cart */}
+                { notiAddCart &&
+                    <div className="absolute top-1/3 left-1/2 -translate-x-1/2 flex flex-col items-center space-y-2 w-44 px-2 py-5 bg-slate-300/80 rounded-xl shadow-lg">
+                        <FontAwesomeIcon icon={faCircleCheck} size="lg" color="green" />
+                        <p className="text-sm">Add to cart successfully</p>
+                    </div>
+                }
             </div>
         </div>
     )

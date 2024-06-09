@@ -34,7 +34,7 @@ function Card14() {
                 <div className="w-full flex flex-row flex-wrap items-center space-x-2">
                     {/* icon */}
                     <div className="basis-10 flex justify-center">
-                        <FontAwesomeIcon className="hover:cursor-pointer" icon={faMobileButton} color="#16A085" size="xl" />
+                        <FontAwesomeIcon icon={faMobileButton} color="#16A085" size="xl" />
                     </div>
     
                     {/* text */}
@@ -48,7 +48,7 @@ function Card14() {
                 <div className="w-full flex flex-row flex-wrap items-center space-x-2">
                     {/* icon */}
                     <div className="basis-10 flex justify-center">
-                        <FontAwesomeIcon className="hover:cursor-pointer" icon={faEnvelope} color="#16A085" size="xl" />
+                        <FontAwesomeIcon icon={faEnvelope} color="#16A085" size="xl" />
                     </div>
     
                     {/* text */}
@@ -62,7 +62,7 @@ function Card14() {
                 <div className="w-full flex flex-row flex-wrap items-center space-x-2">
                     {/* icon */}
                     <div className="basis-10 flex justify-center">
-                        <FontAwesomeIcon className="hover:cursor-pointer" icon={faGlobe} color="#16A085" size="xl" />
+                        <FontAwesomeIcon icon={faGlobe} color="#16A085" size="xl" />
                     </div>
     
                     {/* text */}
@@ -77,18 +77,18 @@ function Card14() {
             <div className="w-full flex flex-row justify-center">
                 {/* social */}
                 <div className="w-11/12 flex flex-row flex-wrap justify-evenly bg-emerald-400 py-5 rounded-2xl translate-y-1/2 shadow-black/10 shadow-lg">
-                    <button>
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faFacebook} size="xl" />
-                    </button>
-                    <button>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faInstagram} size="xl" />
-                    </button>
-                    <button>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faLinkedin} size="xl" />
-                    </button>
-                    <button>
+                    </a>
+                    <a href="https://x.com" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faTwitter} size="xl" />
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>

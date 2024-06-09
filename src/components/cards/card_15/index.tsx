@@ -1,7 +1,23 @@
 import './style.css'
 import images from '../../../assets/images'
 
+import { useState } from 'react'
+
 function Card15() {
+    const [btnViewMore, setBtnViewMore] = useState("View More")
+    const [viewMore, setViewMore] = useState(false)
+    
+    const handleViewMore = () => {
+        if (btnViewMore === "View More") {
+            setBtnViewMore("Hide")
+            setViewMore(true)
+        }
+        else {
+            setBtnViewMore("View More")
+            setViewMore(false)
+        }
+    }
+
     return (
         // card
         <div className="w-80 rounded-3xl shadow-neutral-500/50 shadow-lg overflow-hidden">
@@ -25,14 +41,19 @@ function Card15() {
                             <p className="text-teal-600 text-2xl font-semibold">Lotw Fox</p>
     
                             {/* description */}
-                            <p className="text-white text-base">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'.
+                            <p className={`text-white text-base ${viewMore ? "line-clamp-none" : "line-clamp-3"} `}>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed ab mollitia maiores magni aspernatur fuga corrupti, odio doloremque reiciendis repellendus modi itaque aut ut nostrum voluptatem cum adipisci perspiciatis laborum.
                             </p>
                         </div>
 
                         {/* button */}
                         <div>
-                            <button className="px-8 py-3 bg-yellow-500 rounded-md hover:shadow-yellow-800 hover:shadow-md transition-shadow active:shadow-yellow-300 active:shadow-inner">View More</button>
+                            <button
+                                className="w-32 px-2 py-3 bg-yellow-500 rounded-md hover:shadow-yellow-800 hover:shadow-md transition-shadow active:shadow-yellow-300 active:shadow-inner"
+                                onClick={handleViewMore}
+                            >
+                                {btnViewMore}
+                            </button>
                         </div>
                     </div>
                 </div>

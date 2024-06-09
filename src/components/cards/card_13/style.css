@@ -5,3 +5,7 @@
 .p-2px {
     padding: 2px;
 }
+
+.highlight {
+    box-shadow: 2px 2px 20px 0 #10b981;
+}

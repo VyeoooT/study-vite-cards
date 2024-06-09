@@ -31,23 +31,23 @@ function Card10() {
 
                 {/* social */}
                 <div className="flex flex-row flex-wrap justify-center space-x-3">
-                    <button>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faInstagram} size="lg" />
-                    </button>
-                    <button>
+                    </a>
+                    <a href="https://x.com" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faTwitter} size="lg" />
-                    </button>
-                    <button>
+                    </a>
+                    <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faDribbble} size="lg" />
-                    </button>
-                    <button>
+                    </a>
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faFacebook} size="lg" />
-                    </button>
+                    </a>
                 </div>
 
                 {/* button */}
                 <div className="w-full text-center px-5">
-                    <button className="w-full py-1 bg-black rounded-full text-white font-medium text-base border-2 border-transparent hover:bg-white hover:text-black hover:border-black transition-colors">Contact</button>
+                    <button className="w-full py-1 bg-black rounded-full text-white font-medium text-base border-2 border-transparent hover:bg-white hover:text-black hover:border-black transition-colors active:shadow-green-900 active:shadow-inner">Contact</button>
                 </div>
             </div>
         </div>

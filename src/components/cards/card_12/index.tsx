@@ -52,18 +52,18 @@ function Card12() {
 
                     {/* social - icon */}
                     <div className="flex flex-row flex-wrap justify-center space-x-4">
-                        <button>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
                             <FontAwesomeIcon icon={faFacebook} size='lg' color="#2266AE" />
-                        </button>
-                        <button>
-                            <FontAwesomeIcon icon={faInstagram} size='lg' color="#D7326C" mask={faCircle} />
-                        </button>
-                        <button>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                            <FontAwesomeIcon icon={faInstagram} size='lg' color="#D7326C" mask={faCircle} />                                          
+                        </a>
+                        <a href="https://x.com" target="_blank" rel="noopener noreferrer">
                             <FontAwesomeIcon icon={faTwitter} size='lg' color="#1890DF" mask={faCircle} />
-                        </button>
-                        <button>
-                            <FontAwesomeIcon icon={faGithub} size='lg' color="#404142" />
-                        </button>
+                        </a>
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                            <FontAwesomeIcon icon={faGithub} size='lg' color="#404142" />                        
+                        </a>
                     </div>
                 </div>
             </div>

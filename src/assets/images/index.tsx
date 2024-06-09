@@ -12,18 +12,23 @@ import avtCard7 from './avt-card-7.jpg'
 
 import avtCard9 from './avt-card-9.jpg'
 
-import shoes from './shoes.png'
+import addidasBlue from './card13/blue.png'
+import addidasYellow from './card13/yellow.png'
+import addidasPink from './card13/pink.png'
 
 import avtCard15 from './avt-card-15.png'
 
-import appleTop17 from './apple-top-17.png'
-import greenAppleflipped17 from './green-apple-flipped-17.png'
-import greenAppleMain17 from './green-apple-with-slice-main-17.png'
-import greenApple217 from './green-apple2-17.png'
-import halfApple17 from './half-apple-17.png'
-import orangeApple17 from './orange-apple-17.png'
-import redApple17 from './red-apple-17.png'
-import yellowApple17 from './yellow-apple-17.png'
+import appleGreenMain17 from './card17/green/green-main.png'
+import appleGreenSelect17 from './card17/green/green-selected.png'
+import appleGoldenMain17 from './card17/golden/golden-main.png'
+import appleGoldenSelect17 from './card17/golden/golden-selected.png'
+import appleRedMain17 from './card17/red/red-main.png'
+import appleRedSelect17 from './card17/red/red-selected.png'
+
+import appleThumb117 from './card17/thumbs/apple1.png'
+import appleThumb217 from './card17/thumbs/apple2.png'
+import appleThumb317 from './card17/thumbs/apple3.png'
+import appleThumb417 from './card17/thumbs/apple4.png'
 
 import strawberry18 from './img-product-card-18.png'
 
@@ -31,9 +36,12 @@ import bgCard19 from './bg-card-19.jpg'
 
 import plant20 from './img-product-card-20.jpg'
 
-import schoolBag21 from './img-product-card-21.jpg'
+import schoolBagBlack21 from './card21/img-product-card-21.jpg'
+import schoolBagRed21 from './card21/img-product-card-21-2.jpg'
 
-import shoesCard22 from './shoes-card-22.png'
+import nikeOrangeCard22 from './card22/nike-orange-22.png'
+import nikeBlackCard22 from './card22/nike-black-22.png'
+import nikeBlueCard22 from './card22/nike-blue-22.png'
 
 import firtsImg23 from './first-course-card-23.jpg'
 import secondsImg23 from './second-course-card-23.jpg'
@@ -75,18 +83,23 @@ export default {
 
   avtCard9,
 
-  shoes,
+  addidasBlue,
+  addidasYellow,
+  addidasPink,
 
   avtCard15,
 
-  appleTop17,
-  greenAppleflipped17,
-  greenAppleMain17,
-  greenApple217,
-  halfApple17,
-  orangeApple17,
-  redApple17,
-  yellowApple17,
+  appleGreenMain17,
+  appleGreenSelect17,
+  appleGoldenMain17,
+  appleGoldenSelect17,
+  appleRedMain17,
+  appleRedSelect17,
+
+  appleThumb117,
+  appleThumb217,
+  appleThumb317,
+  appleThumb417,
 
   strawberry18,
 
@@ -94,9 +107,12 @@ export default {
 
   plant20,
 
-  schoolBag21,
+  schoolBagBlack21,
+  schoolBagRed21,
 
-  shoesCard22,
+  nikeOrangeCard22,
+  nikeBlackCard22,
+  nikeBlueCard22,
 
   firtsImg23,
   secondsImg23,

@@ -29,15 +29,15 @@ function Card7() {
 
                 {/* social */}
                 <div className="flex flex-row flex-wrap justify-center space-x-4">
-                    <button className="min-w-8 min-h-8 px-1 py-1 outline outline-2 outline-black rounded-full opacity-80 hover:cursor-pointer hover:opacity-100 transition-opacity">
+                    <a href="https://facebook.com" target="_blank" className="flex justify-center items-center min-w-8 min-h-8 px-1 py-1 outline outline-2 outline-black rounded-full opacity-80 hover:cursor-pointer hover:opacity-100 transition-opacity">
                         <FontAwesomeIcon icon={faFacebookF} />
-                    </button>
-                    <button className="min-w-8 min-h-8 px-1 py-1 outline outline-2 outline-black rounded-full opacity-80 hover:cursor-pointer hover:opacity-100 transition-opacity">
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" className="flex justify-center items-center min-w-8 min-h-8 px-1 py-1 outline outline-2 outline-black rounded-full opacity-80 hover:cursor-pointer hover:opacity-100 transition-opacity">
                         <FontAwesomeIcon icon={faLinkedin} />
-                    </button>
-                    <button className="min-w-8 min-h-8 px-1 py-1 outline outline-2 outline-black rounded-full opacity-80 hover:cursor-pointer hover:opacity-100 transition-opacity">
+                    </a>
+                    <a href="https://x.com" target="_blank" className="flex justify-center items-center min-w-8 min-h-8 px-1 py-1 outline outline-2 outline-black rounded-full opacity-80 hover:cursor-pointer hover:opacity-100 transition-opacity">
                         <FontAwesomeIcon icon={faTwitter} />
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>

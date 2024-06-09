@@ -2,10 +2,27 @@ import './style.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleCheck, faCircleXmark, faDollar } from '@fortawesome/free-solid-svg-icons'
 
+import { useState } from 'react'
+
 function Card16() {
+    const [notiBuyNow, setNotiBuyNow] = useState(false)
+    const [disBtnBuyNow, setDisBtnBuyNow] = useState(false)
+
+    const handleNotiBuyNow = () => {
+        setNotiBuyNow(true)
+        setDisBtnBuyNow(true)
+
+        setTimeout(() => {
+            window.open("https://portal.vietnix.vn/cart.php?a=view", "_blank")
+
+            setNotiBuyNow(false)
+            setDisBtnBuyNow(false)
+        }, 1300);
+    }
+
     return (
         // card
-        <div className="w-72 rounded-3xl bg-linear-gradient-card16 py-5 space-y-7 divide-y divide-gray-500 shadow-black/50 shadow-xl overflow-hidden">
+        <div className="relative w-72 rounded-3xl bg-linear-gradient-card16 py-5 space-y-7 divide-y divide-gray-500 shadow-black/50 shadow-xl overflow-hidden">
             {/* top */}
             <div className="w-full flex flex-col items-center my-6 space-y-5">
                 {/* title */}
@@ -70,8 +87,21 @@ function Card16() {
 
                 {/* button */}
                 <div>
-                    <button className="py-2 px-7 bg-emerald-400 rounded-full border-2 border-transparent hover:text-white hover:bg-transparent hover:border-emerald-500 transition-colors active:translate-y-1">Buy Now</button>
+                    <button
+                        className="py-2 px-7 bg-emerald-400 rounded-full border-2 border-transparent hover:text-white hover:bg-transparent hover:border-emerald-500 transition-colors active:translate-y-1 disabled:opacity-60 disabled:translate-y-0"
+                        onClick={handleNotiBuyNow}
+                        disabled={disBtnBuyNow}
+                    >
+                        Buy Now
+                    </button>
                 </div>
+
+                {/* notification */}
+                { notiBuyNow &&
+                    <div className="absolute top-1/4 -translate-y-5 bg-slate-400/40 px-4 py-1 rounded-full">
+                        <p className="text-sm font-light text-stone-700">Moving to payment page...</p>
+                    </div>
+                }
             </div>
         </div>
     )
