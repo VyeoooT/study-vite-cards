@@ -7,7 +7,6 @@ import { faFacebookF, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg
 function Card7() {
     return (
         // card
-        // <div className="w-64 max-2xl:w-80 max-xl:w-72 max-lg:w-64 max-md:w-52 max-sm:w-40 flex flex-col items-center rounded-md bg-white border-2 border-black overflow-hidden">
         <div className="w-64 flex flex-col items-center rounded-md bg-white border-2 border-black overflow-hidden">
             {/* top */}
             <div className="w-full">
@@ -20,7 +19,6 @@ function Card7() {
                 {/* info */}
                 <div className="w-full text-center text-slate-800">
                     {/* name */}
-                    {/* <p className="text-3xl max-2xl:text-2xl max-xl:text-xl max-lg:text-xl max-md:text-base max-sm:text-md font-medium">Robert Downey Jr</p> */}
                     <p className="text-xl font-medium">Robert Downey Jr</p>
 
                     {/* position */}

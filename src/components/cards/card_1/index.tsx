@@ -25,13 +25,13 @@ function Card1() {
   const handleFollower = () => {
     if (plusMinus === faPlus) {
       setPlusMinus(faMinus)
-      console.log("dau tru")
+      // console.log("dau tru")
 
       setFollower(follower + 1)
     }
     else {
       setPlusMinus(faPlus)
-      console.log("dau cong")
+      // console.log("dau cong")
 
       setFollower(follower - 1)
     }
@@ -42,19 +42,19 @@ function Card1() {
     setShowDesc(!showDesc)
     
     if (moreLess === "MORE") {
-      console.log("show")
+      // console.log("show")
       setMoreLess("LESS")
       setIconChevron(faChevronUp)
     }
     if (moreLess === "LESS") {
-      console.log("hidden")
+      // console.log("hidden")
       setMoreLess("MORE")
       setIconChevron(faChevronDown)
     }
   }
 
   return (
-    console.log("render card1"),
+    // console.log("render card1"),
     
     /* card */
     <div className="relative w-60 rounded-xl shadow-neutral-500/50 shadow-lg">

@@ -6,7 +6,6 @@ function Card35() {
         // card
         <div className="w-80 flex flex-col shadow-neutral-500 drop-shadow-lg">
             {/* top */}
-            {/* <div className="basis-1/3 aspect-square relative flex flex-col justify-center items-center bg-gradient-to-bl from-stone-500 from-40% via-yellow-900/80 to-red-950"> */}
             <div className="aspect-4-3-card-35 relative flex flex-col justify-center items-center bg-gradient-to-bl from-stone-500 from-40% via-yellow-900/80 to-red-950 rounded-tl-xl rounded-tr-xl">
                 {/* img */}
                 <div className="w-130p absolute">

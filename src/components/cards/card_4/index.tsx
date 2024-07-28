@@ -18,28 +18,28 @@ function Card4() {
 
     const handleChecked = (index: number) => {
         setLastChecked(index)
-        console.log("lastChecked: ", lastChecked)
+        // console.log("lastChecked: ", lastChecked)
 
         setChecked(prevChecked => {
             const newChecked = [...prevChecked]
             const currentChecked = prevChecked[index]
 
-            console.log("newChecked: ", newChecked)
-            console.log("currentChecked: ", index, currentChecked)
+            // console.log("newChecked: ", newChecked)
+            // console.log("currentChecked: ", index, currentChecked)
 
             if (currentChecked) {
                 for (let i = index + 1; i < starQty; i++) {
                     newChecked[i] = false
-                    console.log("newChecked[i]: ", [i], newChecked[i]);
+                    // console.log("newChecked[i]: ", [i], newChecked[i]);
                 }
             } else {
                 for (let i = lastChecked + 1; i <= index; i++) {
                     newChecked[i] = true
-                    console.log("newChecked[i]: ", [i], newChecked[i]);
+                    // console.log("newChecked[i]: ", [i], newChecked[i]);
                 }
             }
             
-            {console.log("return newChecked: ", newChecked)}
+            // {console.log("return newChecked: ", newChecked)}
             return newChecked
         })
     }
@@ -53,11 +53,11 @@ function Card4() {
 
         if (btnAboutMe === "About Me") {
             setBtnAboutMe("Hide About")
-            console.log("content default: ", showAbout)
+            // console.log("content default: ", showAbout)
         }
         else {
             setBtnAboutMe("About Me")
-            console.log("content default: ", showAbout)
+            // console.log("content default: ", showAbout)
         }
     }
 
@@ -113,12 +113,12 @@ function Card4() {
                     (
                         <div className="text-sm">
                             {/* about me */}
-                            <p className="">Name: Prem Shahi</p>
-                            <p className="">Position: Web Developer</p>
-                            <p className="">Country: Mexico</p>
-                            <p className="">Phone: 09x x83 3220</p>
-                            <p className="">Mail: premshahi@gmail.com</p>
-                            <p className="">Introduce yourself: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, voluptatibus, voluptas quibusdam.</p>
+                            <p><span className="font-bold">Name:</span> Prem Shahi</p>
+                            <p><span className="font-bold">Position:</span> Web Developer</p>
+                            <p><span className="font-bold">Country:</span> Mexico</p>
+                            <p><span className="font-bold">Phone:</span> 09x x83 3220</p>
+                            <p><span className="font-bold">Mail:</span> premshahi@gmail.com</p>
+                            <p><span className="font-bold text-justify">Introduce yourself:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, voluptatibus, voluptas quibusdam.</p>
                         </div>
                     )
                     
@@ -138,7 +138,7 @@ function Card4() {
                 {/* rate */}
                 <div className="w-full flex flex-row flex-wrap justify-center space-x-1">
                     {iconStarsMap.map((_, idx) => (
-                        console.log("re-render"),
+                        // console.log("re-render"),
                         
                         <button key={idx} onClick={() => handleChecked(idx)}>
                             <FontAwesomeIcon className="translate-y-0 hover:translate-y-1 transition-transform" icon={checked[idx] ? faStarSolid : faStarRegular} style={{ color: "#7E22CE" }} />

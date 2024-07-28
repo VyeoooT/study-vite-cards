@@ -46,7 +46,7 @@ function Card13() {
 
         setTimeout(() => {
             window.open("https://shopee.vn/cart/", "_blank", "noopener, noreferrer")
-            console.log("open link")
+            // console.log("open link")
 
             setNotiCart(false)
             setDisableCart(false)
@@ -86,7 +86,7 @@ function Card13() {
         }
 
         if (!bgColorMapping[color]) {
-            console.log(`not exists background-color mapping: ${color}`)
+            // console.log(`not exists background-color mapping: ${color}`)
             return ""
         }
         
@@ -101,7 +101,7 @@ function Card13() {
         }
 
         if (!outlineColorMapping[color]) {
-            console.log(`not exists outline-color mapping: ${color}`)
+            // console.log(`not exists outline-color mapping: ${color}`)
             return ""
         }
         
@@ -189,7 +189,7 @@ function Card13() {
     
                         {/* color */}
                         {initProduct.colors.map((color, idx) => (
-                            console.log(initProduct.colors, properties.color, color, idx, properties.color === color ? true : false, properties.color === color ? "outline outline-2 " + `outline-${color}-500` + " outline-offset-1" : "outline-none"),
+                            // console.log(initProduct.colors, properties.color, color, idx, properties.color === color ? true : false, properties.color === color ? "outline outline-2 " + `outline-${color}-500` + " outline-offset-1" : "outline-none"),
 
                             <button
                                 key={idx}

@@ -12,16 +12,16 @@ function Card2() {
 
         if (moreLess === "View More") {
             setMoreLess("View Less")
-            console.log("view more")
+            // console.log("view more")
         }
         else {
             setMoreLess("View More")
-            console.log("view less")
+            // console.log("view less")
         }
     }
 
     return (
-        console.log("render card2"),
+        // console.log("render card2"),
 
         // card
         <div className="w-64 rounded-3xl overflow-hidden shadow-neutral-500/50 shadow-lg">

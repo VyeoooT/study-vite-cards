@@ -32,12 +32,6 @@ const products = [
                 "imgSelect": images.appleGoldenSelect17,
                 "price": 8.99
             },
-            // {
-            //     "color": "orange",
-            //     "image": images.orangeApple17,
-            //     "imgSelect": images.orangeAppleMain17,
-            //     "price": 10.00
-            // },
             {
                 "color": "red",
                 "imageMain": images.appleRedMain17,

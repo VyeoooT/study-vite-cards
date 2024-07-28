@@ -1,8 +1,3 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-// import './App.css'
-
 import CardContainer from './components/CardContainer.tsx'
 
 import Card1 from './components/cards/card_1/index.tsx'
@@ -57,8 +52,6 @@ function App() {
 
         {/* layout grid */}
         <div className="flex flex-wrap justify-center gap-20">
-        {/* <div className="grid justify-items-center items-start gap-x-3 gap-y-7 2xl:grid-cols-4 xl:grid-cols-3 md:grid-cols-2 max-md:gap-y-20"> */}
-        {/* <div className="grid auto-rows-max hover:auto-rows-min"> */}
           <CardContainer label="Card 1">
             <Card1 />
           </CardContainer>
