@@ -40,6 +40,7 @@ import Card37 from './components/cards/card_37/index.tsx'
 import Card38 from './components/cards/card_38/index.tsx'
 import Card39 from './components/cards/card_39/index.tsx'
 import Card40 from './components/cards/card_40/index.tsx'
+import LinkGithub from './components/linkGit/index.tsx'
 
 function App() {
   return (
@@ -212,6 +213,8 @@ function App() {
             <Card40 />
           </CardContainer>
         </div>
+
+        <LinkGithub />
       </div>
     </>
   )
